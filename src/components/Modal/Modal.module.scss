@@ -1,0 +1,7 @@
+@import "../../assets/scss/paper-dashboard/variables";
+.Modal {
+        max-width: 90% !important;
+        @media (max-width: $sm-screen-size) {
+                max-width: 100% !important;
+          }
+}

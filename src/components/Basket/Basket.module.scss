@@ -1,0 +1,40 @@
+@import "../../assets/scss/paper-dashboard/variables";
+.Basket {
+  .card {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+    @media (max-width: 767px) {
+      margin: 3vh auto;
+    }
+    .title {
+      margin-bottom: 5vh;
+    }
+    .cart {
+      background-color: #fff;
+      padding: 4vh 5vh;
+      border-bottom-left-radius: 1rem;
+      border-top-left-radius: 1rem;
+      @media (max-width: 767px) {
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+      }
+    }
+  }
+  .summary {
+    border-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65);
+    &.col-2 {
+      padding: 0;
+    }
+    @media (max-width: $sm-screen-size) {
+      margin-top: 25px;
+      background-color: #ddd;
+    }
+  }
+}

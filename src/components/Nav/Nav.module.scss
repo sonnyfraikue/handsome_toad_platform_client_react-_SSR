@@ -1,0 +1,87 @@
+@import "../../assets/scss/paper-dashboard/variables";
+.Nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    .countrySelect {
+      input{
+        border: 1px solid #ddd !important;
+      }
+      @media (max-width: $sm-screen-size) {
+        margin-bottom: 10px;
+  }
+    }
+    .badge {
+        font-size: 13px;
+        display: inline-block;
+        border-radius: 25%;
+        color: #fff;
+        padding: 2px 11px;
+        position: relative;
+        margin-left: 5px;
+      }
+      
+      .pulsate::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: pulse 1s ease infinite;
+        border-radius: 30%;
+        border: 4px double lighten(rgb(0, 238, 255), 20%);
+      }
+      .navbar-nav {
+          margin-left: 0 !important;
+      }
+      
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        60% {
+          transform: scale(1.3);
+          opacity: 0.4;
+        }
+        100% {
+          transform: scale(1.4);
+          opacity: 0;
+        }
+      }
+
+    @media (max-width: $sm-screen-size) {
+            .dropdown-menu{
+                visibility: visible !important;
+                display: block !important;
+                opacity: 1 !important;
+            }
+            .navbar-collapse{
+                visibility: visible !important;
+                display: block !important;
+                opacity: 1 !important;
+            }
+      }
+    .nav-item {
+       
+        .dropdown-menu {
+            top: 85px;
+            padding: 10px;
+        }
+        &:hover {
+            .dropdown-menu {
+                visibility: visible;
+                opacity: 1;
+                top: 85px;
+
+                .dropdown-item:hover{
+                    background-color: #fff;
+                    color:#000 !important;
+                    text-decoration: underline;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

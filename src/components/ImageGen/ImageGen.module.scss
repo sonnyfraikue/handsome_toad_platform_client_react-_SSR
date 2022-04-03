@@ -1,0 +1,7 @@
+@import "../../assets/scss/paper-dashboard/variables";
+    .canvas-wrapper{
+        @media (max-width: $sm-screen-size) {
+            height: 50px;
+            margin-top: 20px;
+          }
+    }

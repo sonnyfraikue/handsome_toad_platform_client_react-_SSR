@@ -1,0 +1,26 @@
+@import "../../assets/scss/paper-dashboard/variables";
+.Landingpage {
+    .Searchdomain {
+        background: #7ca39b url("../../assets/img/1140-2.svg") center / cover no-repeat;
+        min-height: 200px;
+        color: #fff;
+        font-weight: 700;
+        .mt-7 {
+            margin-top: 3.5rem !important;
+            margin-bottom: 4.5rem !important;
+            @media (min-width: $md-screen-size) {
+                padding-left: 50px;
+              }
+        }
+    }
+    .Services {
+        font-weight: 700;
+    }
+    .packages-title {
+        text-align: center;
+        @media (max-width: $sm-screen-size) {
+            font-size: 1.3rem;
+          }
+    }
+    
+}

@@ -1,0 +1,8 @@
+@import "../../assets/scss/paper-dashboard/variables";
+.Dynamic_website_development_team {
+    .display-4{
+        @media (max-width: $sm-screen-size) {
+            font-size: 1.5rem;
+          }
+    }
+}

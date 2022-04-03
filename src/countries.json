@@ -1,0 +1,1836 @@
+[
+    {
+      "CC": "AF",
+      "a-2": "DZ",
+      "a-3": "DZA",
+      "#": "012",
+      "Name": "Algeria, People's Democratic Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "AO",
+      "a-3": "AGO",
+      "#": "024",
+      "Name": "Angola, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "BW",
+      "a-3": "BWA",
+      "#": "072",
+      "Name": "Botswana, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "IO",
+      "a-3": "IOT",
+      "#": "086",
+      "Name": "British Indian Ocean Territory"
+    },
+    {
+      "CC": "AF",
+      "a-2": "BI",
+      "a-3": "BDI",
+      "#": "108",
+      "Name": "Burundi, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "CM",
+      "a-3": "CMR",
+      "#": "120",
+      "Name": "Cameroon, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "CV",
+      "a-3": "CPV",
+      "#": "132",
+      "Name": "Cape Verde, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "CF",
+      "a-3": "CAF",
+      "#": "140",
+      "Name": "Central African Republic"
+    },
+    {
+      "CC": "AF",
+      "a-2": "TD",
+      "a-3": "TCD",
+      "#": "148",
+      "Name": "Chad, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "KM",
+      "a-3": "COM",
+      "#": "174",
+      "Name": "Comoros, Union of the"
+    },
+    {
+      "CC": "AF",
+      "a-2": "YT",
+      "a-3": "MYT",
+      "#": "175",
+      "Name": "Mayotte, Department of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "CG",
+      "a-3": "COG",
+      "#": "178",
+      "Name": "Congo, Republic of the"
+    },
+    {
+      "CC": "AF",
+      "a-2": "CD",
+      "a-3": "COD",
+      "#": "180",
+      "Name": "Congo, Democratic Republic of the"
+    },
+    {
+      "CC": "AF",
+      "a-2": "BJ",
+      "a-3": "BEN",
+      "#": "204",
+      "Name": "Benin, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "GQ",
+      "a-3": "GNQ",
+      "#": "226",
+      "Name": "Equatorial Guinea, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ET",
+      "a-3": "ETH",
+      "#": "231",
+      "Name": "Ethiopia, Federal Democratic Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ER",
+      "a-3": "ERI",
+      "#": "232",
+      "Name": "Eritrea, State of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "TF",
+      "a-3": "ATF",
+      "#": "260",
+      "Name": "French Southern Territories"
+    },
+    {
+      "CC": "AF",
+      "a-2": "DJ",
+      "a-3": "DJI",
+      "#": "262",
+      "Name": "Djibouti, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "GA",
+      "a-3": "GAB",
+      "#": "266",
+      "Name": "Gabon, Gabonese Republic"
+    },
+    {
+      "CC": "AF",
+      "a-2": "GM",
+      "a-3": "GMB",
+      "#": "270",
+      "Name": "Gambia, Republic of the"
+    },
+    {
+      "CC": "AF",
+      "a-2": "GH",
+      "a-3": "GHA",
+      "#": "288",
+      "Name": "Ghana, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "GN",
+      "a-3": "GIN",
+      "#": "324",
+      "Name": "Guinea, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "CI",
+      "a-3": "CIV",
+      "#": "384",
+      "Name": "Côte d'Ivoire, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "KE",
+      "a-3": "KEN",
+      "#": "404",
+      "Name": "Kenya, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "LS",
+      "a-3": "LSO",
+      "#": "426",
+      "Name": "Lesotho, Kingdom of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "LR",
+      "a-3": "LBR",
+      "#": "430",
+      "Name": "Liberia, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "LY",
+      "a-3": "LBY",
+      "#": "434",
+      "Name": "Libya, State of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "MG",
+      "a-3": "MDG",
+      "#": "450",
+      "Name": "Madagascar, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "MW",
+      "a-3": "MWI",
+      "#": "454",
+      "Name": "Malawi, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ML",
+      "a-3": "MLI",
+      "#": "466",
+      "Name": "Mali, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "MR",
+      "a-3": "MRT",
+      "#": "478",
+      "Name": "Mauritania, Islamic Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "MU",
+      "a-3": "MUS",
+      "#": "480",
+      "Name": "Mauritius, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "MA",
+      "a-3": "MAR",
+      "#": "504",
+      "Name": "Morocco, Kingdom of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "MZ",
+      "a-3": "MOZ",
+      "#": "508",
+      "Name": "Mozambique, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "NA",
+      "a-3": "NAM",
+      "#": "516",
+      "Name": "Namibia, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "NE",
+      "a-3": "NER",
+      "#": "562",
+      "Name": "Niger, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "NG",
+      "a-3": "NGA",
+      "#": "566",
+      "Name": "Nigeria, Federal Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "GW",
+      "a-3": "GNB",
+      "#": "624",
+      "Name": "Guinea-Bissau, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "RE",
+      "a-3": "REU",
+      "#": "638",
+      "Name": "Reunion"
+    },
+    {
+      "CC": "AF",
+      "a-2": "RW",
+      "a-3": "RWA",
+      "#": "646",
+      "Name": "Rwanda, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SH",
+      "a-3": "SHN",
+      "#": "654",
+      "Name": "Saint Helena"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ST",
+      "a-3": "STP",
+      "#": "678",
+      "Name": "São Tomé and Príncipe, Democratic Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SN",
+      "a-3": "SEN",
+      "#": "686",
+      "Name": "Senegal, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SC",
+      "a-3": "SYC",
+      "#": "690",
+      "Name": "Seychelles, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SL",
+      "a-3": "SLE",
+      "#": "694",
+      "Name": "Sierra Leone, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SO",
+      "a-3": "SOM",
+      "#": "706",
+      "Name": "Somalia, Federal Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ZA",
+      "a-3": "ZAF",
+      "#": "710",
+      "Name": "South Africa, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ZW",
+      "a-3": "ZWE",
+      "#": "716",
+      "Name": "Zimbabwe, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SS",
+      "a-3": "SSD",
+      "#": "728",
+      "Name": "South Sudan, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SD",
+      "a-3": "SDN",
+      "#": "729",
+      "Name": "Sudan, Republic of the"
+    },
+    {
+      "CC": "AF",
+      "a-2": "EH",
+      "a-3": "ESH",
+      "#": "732",
+      "Name": "Sahrawi Arab Democratic Republic"
+    },
+    {
+      "CC": "AF",
+      "a-2": "SZ",
+      "a-3": "SWZ",
+      "#": "748",
+      "Name": "Eswatini, Kingdom of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "TG",
+      "a-3": "TGO",
+      "#": "768",
+      "Name": "Togo, Togolese Republic"
+    },
+    {
+      "CC": "AF",
+      "a-2": "TN",
+      "a-3": "TUN",
+      "#": "788",
+      "Name": "Tunisia, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "UG",
+      "a-3": "UGA",
+      "#": "800",
+      "Name": "Uganda, Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "EG",
+      "a-3": "EGY",
+      "#": "818",
+      "Name": "Egypt, Arab Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "TZ",
+      "a-3": "TZA",
+      "#": "834",
+      "Name": "Tanzania, United Republic of"
+    },
+    {
+      "CC": "AF",
+      "a-2": "BF",
+      "a-3": "BFA",
+      "#": "854",
+      "Name": "Burkina Faso"
+    },
+    {
+      "CC": "AF",
+      "a-2": "ZM",
+      "a-3": "ZMB",
+      "#": "894",
+      "Name": "Zambia, Republic of"
+    },
+    {
+      "CC": "AN",
+      "a-2": "AQ",
+      "a-3": "ATA",
+      "#": "010",
+      "Name": "Antarctica (the territory South of 60 deg S)"
+    },
+    {
+      "CC": "AN",
+      "a-2": "BV",
+      "a-3": "BVT",
+      "#": "074",
+      "Name": "Bouvet Island (Bouvetoya)"
+    },
+    {
+      "CC": "AN",
+      "a-2": "GS",
+      "a-3": "SGS",
+      "#": "239",
+      "Name": "South Georgia and the South Sandwich Islands"
+    },
+    {
+      "CC": "AN",
+      "a-2": "HM",
+      "a-3": "HMD",
+      "#": "334",
+      "Name": "Heard Island and McDonald Islands"
+    },
+    {
+      "CC": "AS",
+      "a-2": "AF",
+      "a-3": "AFG",
+      "#": "004",
+      "Name": "Afghanistan, Islamic Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "AZ",
+      "a-3": "AZE",
+      "#": "031",
+      "Name": "Azerbaijan, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "BH",
+      "a-3": "BHR",
+      "#": "048",
+      "Name": "Bahrain, Kingdom of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "BD",
+      "a-3": "BGD",
+      "#": "050",
+      "Name": "Bangladesh, People's Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "AM",
+      "a-3": "ARM",
+      "#": "051",
+      "Name": "Armenia, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "BT",
+      "a-3": "BTN",
+      "#": "064",
+      "Name": "Bhutan, Kingdom of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "BN",
+      "a-3": "BRN",
+      "#": "096",
+      "Name": "Brunei, Nation of, the Abode of Peace"
+    },
+    {
+      "CC": "AS",
+      "a-2": "MM",
+      "a-3": "MMR",
+      "#": "104",
+      "Name": "Myanmar, Union of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "KH",
+      "a-3": "KHM",
+      "#": "116",
+      "Name": "Cambodia, Kingdom of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "LK",
+      "a-3": "LKA",
+      "#": "144",
+      "Name": "Sri Lanka, Democratic Socialist Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "CN",
+      "a-3": "CHN",
+      "#": "156",
+      "Name": "China, People's Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "TW",
+      "a-3": "TWN",
+      "#": "158",
+      "Name": "Taiwan"
+    },
+    {
+      "CC": "AS",
+      "a-2": "CX",
+      "a-3": "CXR",
+      "#": "162",
+      "Name": "Christmas Island"
+    },
+    {
+      "CC": "AS",
+      "a-2": "CC",
+      "a-3": "CCK",
+      "#": "166",
+      "Name": "Cocos (Keeling) Islands"
+    },
+    {
+      "CC": "AS",
+      "a-2": "CY",
+      "a-3": "CYP",
+      "#": "196",
+      "Name": "Cyprus, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "GE",
+      "a-3": "GEO",
+      "#": "268",
+      "Name": "Georgia"
+    },
+    {
+      "CC": "AS",
+      "a-2": "HK",
+      "a-3": "HKG",
+      "#": "344",
+      "Name": "Hong Kong, Special Administrative Region of China"
+    },
+    {
+      "CC": "AS",
+      "a-2": "IN",
+      "a-3": "IND",
+      "#": "356",
+      "Name": "India, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "ID",
+      "a-3": "IDN",
+      "#": "360",
+      "Name": "Indonesia, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "IR",
+      "a-3": "IRN",
+      "#": "364",
+      "Name": "Iran, Islamic Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "IQ",
+      "a-3": "IRQ",
+      "#": "368",
+      "Name": "Iraq, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "IL",
+      "a-3": "ISR",
+      "#": "376",
+      "Name": "Israel, State of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "JP",
+      "a-3": "JPN",
+      "#": "392",
+      "Name": "Japan"
+    },
+    {
+      "CC": "AS",
+      "a-2": "KZ",
+      "a-3": "KAZ",
+      "#": "398",
+      "Name": "Kazakhstan, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "JO",
+      "a-3": "JOR",
+      "#": "400",
+      "Name": "Jordan, Hashemite Kingdom of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "KP",
+      "a-3": "PRK",
+      "#": "408",
+      "Name": "Korea, Democratic People's Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "KR",
+      "a-3": "KOR",
+      "#": "410",
+      "Name": "Korea, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "KW",
+      "a-3": "KWT",
+      "#": "414",
+      "Name": "Kuwait, State of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "KG",
+      "a-3": "KGZ",
+      "#": "417",
+      "Name": "Kyrgyz Republic"
+    },
+    {
+      "CC": "AS",
+      "a-2": "LA",
+      "a-3": "LAO",
+      "#": "418",
+      "Name": "Lao People's Democratic Republic"
+    },
+    {
+      "CC": "AS",
+      "a-2": "LB",
+      "a-3": "LBN",
+      "#": "422",
+      "Name": "Lebanon, Lebanese Republic"
+    },
+    {
+      "CC": "AS",
+      "a-2": "MO",
+      "a-3": "MAC",
+      "#": "446",
+      "Name": "Macao, Special Administrative Region of China"
+    },
+    {
+      "CC": "AS",
+      "a-2": "MY",
+      "a-3": "MYS",
+      "#": "458",
+      "Name": "Malaysia"
+    },
+    {
+      "CC": "AS",
+      "a-2": "MV",
+      "a-3": "MDV",
+      "#": "462",
+      "Name": "Maldives, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "MN",
+      "a-3": "MNG",
+      "#": "496",
+      "Name": "Mongolia"
+    },
+    {
+      "CC": "AS",
+      "a-2": "OM",
+      "a-3": "OMN",
+      "#": "512",
+      "Name": "Oman, Sultanate of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "NP",
+      "a-3": "NPL",
+      "#": "524",
+      "Name": "Nepal, Federal Democratic Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "PK",
+      "a-3": "PAK",
+      "#": "586",
+      "Name": "Pakistan, Islamic Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "PS",
+      "a-3": "PSE",
+      "#": "275",
+      "Name": "Palestine, State of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "PH",
+      "a-3": "PHL",
+      "#": "608",
+      "Name": "Philippines, Republic of the"
+    },
+    {
+      "CC": "AS",
+      "a-2": "TL",
+      "a-3": "TLS",
+      "#": "626",
+      "Name": "Timor-Leste, Democratic Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "QA",
+      "a-3": "QAT",
+      "#": "634",
+      "Name": "Qatar, State of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "RU",
+      "a-3": "RUS",
+      "#": "643",
+      "Name": "Russian Federation"
+    },
+    {
+      "CC": "AS",
+      "a-2": "SA",
+      "a-3": "SAU",
+      "#": "682",
+      "Name": "Saudi Arabia, Kingdom of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "SG",
+      "a-3": "SGP",
+      "#": "702",
+      "Name": "Singapore, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "VN",
+      "a-3": "VNM",
+      "#": "704",
+      "Name": "Vietnam, Socialist Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "SY",
+      "a-3": "SYR",
+      "#": "760",
+      "Name": "Syrian Arab Republic"
+    },
+    {
+      "CC": "AS",
+      "a-2": "TJ",
+      "a-3": "TJK",
+      "#": "762",
+      "Name": "Tajikistan, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "TH",
+      "a-3": "THA",
+      "#": "764",
+      "Name": "Thailand, Kingdom of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "AE",
+      "a-3": "ARE",
+      "#": "784",
+      "Name": "United Arab Emirates"
+    },
+    {
+      "CC": "AS",
+      "a-2": "TR",
+      "a-3": "TUR",
+      "#": "792",
+      "Name": "Turkey, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "TM",
+      "a-3": "TKM",
+      "#": "795",
+      "Name": "Turkmenistan"
+    },
+    {
+      "CC": "AS",
+      "a-2": "EG",
+      "a-3": "EGY",
+      "#": "818",
+      "Name": "Egypt, Arab Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "UZ",
+      "a-3": "UZB",
+      "#": "860",
+      "Name": "Uzbekistan, Republic of"
+    },
+    {
+      "CC": "AS",
+      "a-2": "YE",
+      "a-3": "YEM",
+      "#": "887",
+      "Name": "Yemen"
+    },
+    {
+      "CC": "AS",
+      "a-2": "XD",
+      "a-3": null,
+      "#": null,
+      "Name": "United Nations Neutral Zone"
+    },
+    {
+      "CC": "AS",
+      "a-2": "XS",
+      "a-3": null,
+      "#": null,
+      "Name": "Spratly Islands"
+    },
+    {
+      "CC": "EU",
+      "a-2": "AL",
+      "a-3": "ALB",
+      "#": "008",
+      "Name": "Albania, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "AD",
+      "a-3": "AND",
+      "#": "020",
+      "Name": "Andorra, Principality of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "AZ",
+      "a-3": "AZE",
+      "#": "031",
+      "Name": "Azerbaijan, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "AT",
+      "a-3": "AUT",
+      "#": "040",
+      "Name": "Austria, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "AM",
+      "a-3": "ARM",
+      "#": "051",
+      "Name": "Armenia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "BE",
+      "a-3": "BEL",
+      "#": "056",
+      "Name": "Belgium, Kingdom of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "BA",
+      "a-3": "BIH",
+      "#": "070",
+      "Name": "Bosnia and Herzegovina"
+    },
+    {
+      "CC": "EU",
+      "a-2": "BG",
+      "a-3": "BGR",
+      "#": "100",
+      "Name": "Bulgaria, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "BY",
+      "a-3": "BLR",
+      "#": "112",
+      "Name": "Belarus, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "HR",
+      "a-3": "HRV",
+      "#": "191",
+      "Name": "Croatia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "CY",
+      "a-3": "CYP",
+      "#": "196",
+      "Name": "Cyprus, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "CZ",
+      "a-3": "CZE",
+      "#": "203",
+      "Name": "Czech Republic"
+    },
+    {
+      "CC": "EU",
+      "a-2": "DK",
+      "a-3": "DNK",
+      "#": "208",
+      "Name": "Denmark, Kingdom of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "EE",
+      "a-3": "EST",
+      "#": "233",
+      "Name": "Estonia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "FO",
+      "a-3": "FRO",
+      "#": "234",
+      "Name": "Faroe Islands"
+    },
+    {
+      "CC": "EU",
+      "a-2": "FI",
+      "a-3": "FIN",
+      "#": "246",
+      "Name": "Finland, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "AX",
+      "a-3": "ALA",
+      "#": "248",
+      "Name": "Åland Islands"
+    },
+    {
+      "CC": "EU",
+      "a-2": "FR",
+      "a-3": "FRA",
+      "#": "250",
+      "Name": "France, French Republic"
+    },
+    {
+      "CC": "EU",
+      "a-2": "GE",
+      "a-3": "GEO",
+      "#": "268",
+      "Name": "Georgia"
+    },
+    {
+      "CC": "EU",
+      "a-2": "DE",
+      "a-3": "DEU",
+      "#": "276",
+      "Name": "Germany, Federal Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "GI",
+      "a-3": "GIB",
+      "#": "292",
+      "Name": "Gibraltar"
+    },
+    {
+      "CC": "EU",
+      "a-2": "GR",
+      "a-3": "GRC",
+      "#": "300",
+      "Name": "Greece, Hellenic Republic"
+    },
+    {
+      "CC": "EU",
+      "a-2": "VA",
+      "a-3": "VAT",
+      "#": "336",
+      "Name": "Holy See (Vatican City State)"
+    },
+    {
+      "CC": "EU",
+      "a-2": "HU",
+      "a-3": "HUN",
+      "#": "348",
+      "Name": "Hungary, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "IS",
+      "a-3": "ISL",
+      "#": "352",
+      "Name": "Iceland, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "IE",
+      "a-3": "IRL",
+      "#": "372",
+      "Name": "Ireland"
+    },
+    {
+      "CC": "EU",
+      "a-2": "IT",
+      "a-3": "ITA",
+      "#": "380",
+      "Name": "Italy, Italian Republic"
+    },
+    {
+      "CC": "EU",
+      "a-2": "KZ",
+      "a-3": "KAZ",
+      "#": "398",
+      "Name": "Kazakhstan, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "XK",
+      "a-3": "XKX",
+      "#": "",
+      "Name": "Kosovo, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "LV",
+      "a-3": "LVA",
+      "#": "428",
+      "Name": "Latvia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "LI",
+      "a-3": "LIE",
+      "#": "438",
+      "Name": "Liechtenstein, Principality of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "LT",
+      "a-3": "LTU",
+      "#": "440",
+      "Name": "Lithuania, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "LU",
+      "a-3": "LUX",
+      "#": "442",
+      "Name": "Luxembourg, Grand Duchy of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "MT",
+      "a-3": "MLT",
+      "#": "470",
+      "Name": "Malta, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "MC",
+      "a-3": "MCO",
+      "#": "492",
+      "Name": "Monaco, Principality of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "MD",
+      "a-3": "MDA",
+      "#": "498",
+      "Name": "Moldova, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "ME",
+      "a-3": "MNE",
+      "#": "499",
+      "Name": "Montenegro"
+    },
+    {
+      "CC": "EU",
+      "a-2": "NL",
+      "a-3": "NLD",
+      "#": "528",
+      "Name": "Netherlands, Kingdom of the"
+    },
+    {
+      "CC": "EU",
+      "a-2": "NO",
+      "a-3": "NOR",
+      "#": "578",
+      "Name": "Norway, Kingdom of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "PL",
+      "a-3": "POL",
+      "#": "616",
+      "Name": "Poland, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "PT",
+      "a-3": "PRT",
+      "#": "620",
+      "Name": "Portugal, Portuguese Republic"
+    },
+    {
+      "CC": "EU",
+      "a-2": "RO",
+      "a-3": "ROU",
+      "#": "642",
+      "Name": "Romania"
+    },
+    {
+      "CC": "EU",
+      "a-2": "RU",
+      "a-3": "RUS",
+      "#": "643",
+      "Name": "Russian Federation"
+    },
+    {
+      "CC": "EU",
+      "a-2": "SM",
+      "a-3": "SMR",
+      "#": "674",
+      "Name": "San Marino, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "RS",
+      "a-3": "SRB",
+      "#": "688",
+      "Name": "Serbia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "SK",
+      "a-3": "SVK",
+      "#": "703",
+      "Name": "Slovakia (Slovak Republic)"
+    },
+    {
+      "CC": "EU",
+      "a-2": "SI",
+      "a-3": "SVN",
+      "#": "705",
+      "Name": "Slovenia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "ES",
+      "a-3": "ESP",
+      "#": "724",
+      "Name": "Spain, Kingdom of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "SJ",
+      "a-3": "SJM",
+      "#": "744",
+      "Name": "Svalbard & Jan Mayen Islands"
+    },
+    {
+      "CC": "EU",
+      "a-2": "SE",
+      "a-3": "SWE",
+      "#": "752",
+      "Name": "Sweden, Kingdom of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "CH",
+      "a-3": "CHE",
+      "#": "756",
+      "Name": "Switzerland, Swiss Confederation"
+    },
+    {
+      "CC": "EU",
+      "a-2": "TR",
+      "a-3": "TUR",
+      "#": "792",
+      "Name": "Turkey, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "UA",
+      "a-3": "UKR",
+      "#": "804",
+      "Name": "Ukraine"
+    },
+    {
+      "CC": "EU",
+      "a-2": "MK",
+      "a-3": "MKD",
+      "#": "807",
+      "Name": "North Macedonia, Republic of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "GB",
+      "a-3": "GBR",
+      "#": "826",
+      "Name": "United Kingdom of Great Britain & Northern Ireland"
+    },
+    {
+      "CC": "EU",
+      "a-2": "GG",
+      "a-3": "GGY",
+      "#": "831",
+      "Name": "Guernsey, Bailiwick of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "JE",
+      "a-3": "JEY",
+      "#": "832",
+      "Name": "Jersey, Bailiwick of"
+    },
+    {
+      "CC": "EU",
+      "a-2": "IM",
+      "a-3": "IMN",
+      "#": "833",
+      "Name": "Isle of Man"
+    },
+    {
+      "CC": "NA",
+      "a-2": "AG",
+      "a-3": "ATG",
+      "#": "028",
+      "Name": "Antigua and Barbuda"
+    },
+    {
+      "CC": "NA",
+      "a-2": "BS",
+      "a-3": "BHS",
+      "#": "044",
+      "Name": "Bahamas, Commonwealth of the"
+    },
+    {
+      "CC": "NA",
+      "a-2": "BB",
+      "a-3": "BRB",
+      "#": "052",
+      "Name": "Barbados"
+    },
+    {
+      "CC": "NA",
+      "a-2": "BM",
+      "a-3": "BMU",
+      "#": "060",
+      "Name": "Bermuda"
+    },
+    {
+      "CC": "NA",
+      "a-2": "BZ",
+      "a-3": "BLZ",
+      "#": "084",
+      "Name": "Belize"
+    },
+    {
+      "CC": "NA",
+      "a-2": "VG",
+      "a-3": "VGB",
+      "#": "092",
+      "Name": "British Virgin Islands"
+    },
+    {
+      "CC": "NA",
+      "a-2": "CA",
+      "a-3": "CAN",
+      "#": "124",
+      "Name": "Canada"
+    },
+    {
+      "CC": "NA",
+      "a-2": "KY",
+      "a-3": "CYM",
+      "#": "136",
+      "Name": "Cayman Islands"
+    },
+    {
+      "CC": "NA",
+      "a-2": "CR",
+      "a-3": "CRI",
+      "#": "188",
+      "Name": "Costa Rica, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "CU",
+      "a-3": "CUB",
+      "#": "192",
+      "Name": "Cuba, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "DM",
+      "a-3": "DMA",
+      "#": "212",
+      "Name": "Dominica, Commonwealth of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "DO",
+      "a-3": "DOM",
+      "#": "214",
+      "Name": "Dominican Republic"
+    },
+    {
+      "CC": "NA",
+      "a-2": "SV",
+      "a-3": "SLV",
+      "#": "222",
+      "Name": "El Salvador, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "GL",
+      "a-3": "GRL",
+      "#": "304",
+      "Name": "Greenland"
+    },
+    {
+      "CC": "NA",
+      "a-2": "GD",
+      "a-3": "GRD",
+      "#": "308",
+      "Name": "Grenada"
+    },
+    {
+      "CC": "NA",
+      "a-2": "GP",
+      "a-3": "GLP",
+      "#": "312",
+      "Name": "Guadeloupe"
+    },
+    {
+      "CC": "NA",
+      "a-2": "GT",
+      "a-3": "GTM",
+      "#": "320",
+      "Name": "Guatemala, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "HT",
+      "a-3": "HTI",
+      "#": "332",
+      "Name": "Haiti, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "HN",
+      "a-3": "HND",
+      "#": "340",
+      "Name": "Honduras, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "JM",
+      "a-3": "JAM",
+      "#": "388",
+      "Name": "Jamaica"
+    },
+    {
+      "CC": "NA",
+      "a-2": "MQ",
+      "a-3": "MTQ",
+      "#": "474",
+      "Name": "Martinique"
+    },
+    {
+      "CC": "NA",
+      "a-2": "MX",
+      "a-3": "MEX",
+      "#": "484",
+      "Name": "Mexico, United Mexican States"
+    },
+    {
+      "CC": "NA",
+      "a-2": "MS",
+      "a-3": "MSR",
+      "#": "500",
+      "Name": "Montserrat"
+    },
+    {
+      "CC": "NA",
+      "a-2": "CW",
+      "a-3": "CUW",
+      "#": "531",
+      "Name": "Curaçao"
+    },
+    {
+      "CC": "NA",
+      "a-2": "AW",
+      "a-3": "ABW",
+      "#": "533",
+      "Name": "Aruba"
+    },
+    {
+      "CC": "NA",
+      "a-2": "SX",
+      "a-3": "SXM",
+      "#": "534",
+      "Name": "Sint Maarten (Netherlands)"
+    },
+    {
+      "CC": "NA",
+      "a-2": "BQ",
+      "a-3": "BES",
+      "#": "535",
+      "Name": "Bonaire, Sint Eustatius and Saba"
+    },
+    {
+      "CC": "NA",
+      "a-2": "NI",
+      "a-3": "NIC",
+      "#": "558",
+      "Name": "Nicaragua, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "UM",
+      "a-3": "UMI",
+      "#": "581",
+      "Name": "United States Minor Outlying Islands"
+    },
+    {
+      "CC": "NA",
+      "a-2": "PA",
+      "a-3": "PAN",
+      "#": "591",
+      "Name": "Panama, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "PR",
+      "a-3": "PRI",
+      "#": "630",
+      "Name": "Puerto Rico, Commonwealth of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "BL",
+      "a-3": "BLM",
+      "#": "652",
+      "Name": "Saint Barthelemy"
+    },
+    {
+      "CC": "NA",
+      "a-2": "KN",
+      "a-3": "KNA",
+      "#": "659",
+      "Name": "Saint Kitts and Nevis, Federation of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "AI",
+      "a-3": "AIA",
+      "#": "660",
+      "Name": "Anguilla"
+    },
+    {
+      "CC": "NA",
+      "a-2": "LC",
+      "a-3": "LCA",
+      "#": "662",
+      "Name": "Saint Lucia"
+    },
+    {
+      "CC": "NA",
+      "a-2": "MF",
+      "a-3": "MAF",
+      "#": "663",
+      "Name": "Saint Martin"
+    },
+    {
+      "CC": "NA",
+      "a-2": "PM",
+      "a-3": "SPM",
+      "#": "666",
+      "Name": "Saint Pierre and Miquelon"
+    },
+    {
+      "CC": "NA",
+      "a-2": "VC",
+      "a-3": "VCT",
+      "#": "670",
+      "Name": "Saint Vincent and the Grenadines"
+    },
+    {
+      "CC": "NA",
+      "a-2": "TT",
+      "a-3": "TTO",
+      "#": "780",
+      "Name": "Trinidad and Tobago, Republic of"
+    },
+    {
+      "CC": "NA",
+      "a-2": "TC",
+      "a-3": "TCA",
+      "#": "796",
+      "Name": "Turks and Caicos Islands"
+    },
+    {
+      "CC": "NA",
+      "a-2": "US",
+      "a-3": "USA",
+      "#": "840",
+      "Name": "United States of America"
+    },
+    {
+      "CC": "NA",
+      "a-2": "VI",
+      "a-3": "VIR",
+      "#": "850",
+      "Name": "United States Virgin Islands"
+    },
+    {
+      "CC": "OC",
+      "a-2": "AS",
+      "a-3": "ASM",
+      "#": "016",
+      "Name": "American Samoa"
+    },
+    {
+      "CC": "OC",
+      "a-2": "AU",
+      "a-3": "AUS",
+      "#": "036",
+      "Name": "Australia, Commonwealth of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "SB",
+      "a-3": "SLB",
+      "#": "090",
+      "Name": "Solomon Islands"
+    },
+    {
+      "CC": "OC",
+      "a-2": "CK",
+      "a-3": "COK",
+      "#": "184",
+      "Name": "Cook Islands"
+    },
+    {
+      "CC": "OC",
+      "a-2": "FJ",
+      "a-3": "FJI",
+      "#": "242",
+      "Name": "Fiji, Republic of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "PF",
+      "a-3": "PYF",
+      "#": "258",
+      "Name": "French Polynesia"
+    },
+    {
+      "CC": "OC",
+      "a-2": "KI",
+      "a-3": "KIR",
+      "#": "296",
+      "Name": "Kiribati, Republic of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "GU",
+      "a-3": "GUM",
+      "#": "316",
+      "Name": "Guam"
+    },
+    {
+      "CC": "OC",
+      "a-2": "NR",
+      "a-3": "NRU",
+      "#": "520",
+      "Name": "Nauru, Republic of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "NC",
+      "a-3": "NCL",
+      "#": "540",
+      "Name": "New Caledonia"
+    },
+    {
+      "CC": "OC",
+      "a-2": "VU",
+      "a-3": "VUT",
+      "#": "548",
+      "Name": "Vanuatu, Republic of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "NZ",
+      "a-3": "NZL",
+      "#": "554",
+      "Name": "New Zealand"
+    },
+    {
+      "CC": "OC",
+      "a-2": "NU",
+      "a-3": "NIU",
+      "#": "570",
+      "Name": "Niue"
+    },
+    {
+      "CC": "OC",
+      "a-2": "NF",
+      "a-3": "NFK",
+      "#": "574",
+      "Name": "Norfolk Island"
+    },
+    {
+      "CC": "OC",
+      "a-2": "MP",
+      "a-3": "MNP",
+      "#": "580",
+      "Name": "Northern Mariana Islands, Commonwealth of the"
+    },
+    {
+      "CC": "OC",
+      "a-2": "UM",
+      "a-3": "UMI",
+      "#": "581",
+      "Name": "United States Minor Outlying Islands"
+    },
+    {
+      "CC": "OC",
+      "a-2": "FM",
+      "a-3": "FSM",
+      "#": "583",
+      "Name": "Micronesia, Federated States of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "MH",
+      "a-3": "MHL",
+      "#": "584",
+      "Name": "Marshall Islands, Republic of the"
+    },
+    {
+      "CC": "OC",
+      "a-2": "PW",
+      "a-3": "PLW",
+      "#": "585",
+      "Name": "Palau, Republic of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "PG",
+      "a-3": "PNG",
+      "#": "598",
+      "Name": "Papua New Guinea, Independent State of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "PN",
+      "a-3": "PCN",
+      "#": "612",
+      "Name": "Pitcairn Islands"
+    },
+    {
+      "CC": "OC",
+      "a-2": "TK",
+      "a-3": "TKL",
+      "#": "772",
+      "Name": "Tokelau"
+    },
+    {
+      "CC": "OC",
+      "a-2": "TO",
+      "a-3": "TON",
+      "#": "776",
+      "Name": "Tonga, Kingdom of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "TV",
+      "a-3": "TUV",
+      "#": "798",
+      "Name": "Tuvalu"
+    },
+    {
+      "CC": "OC",
+      "a-2": "WF",
+      "a-3": "WLF",
+      "#": "876",
+      "Name": "Wallis and Futuna"
+    },
+    {
+      "CC": "OC",
+      "a-2": "WS",
+      "a-3": "WSM",
+      "#": "882",
+      "Name": "Samoa, Independent State of"
+    },
+    {
+      "CC": "OC",
+      "a-2": "XX",
+      "a-3": null,
+      "#": null,
+      "Name": "Disputed Territory"
+    },
+    {
+      "CC": "SA",
+      "a-2": "AR",
+      "a-3": "ARG",
+      "#": "032",
+      "Name": "Argentina, Argentine Republic"
+    },
+    {
+      "CC": "SA",
+      "a-2": "BO",
+      "a-3": "BOL",
+      "#": "068",
+      "Name": "Bolivia, Plurinational State of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "BR",
+      "a-3": "BRA",
+      "#": "076",
+      "Name": "Brazil, Federative Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "CL",
+      "a-3": "CHL",
+      "#": "152",
+      "Name": "Chile, Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "CO",
+      "a-3": "COL",
+      "#": "170",
+      "Name": "Colombia, Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "EC",
+      "a-3": "ECU",
+      "#": "218",
+      "Name": "Ecuador, Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "FK",
+      "a-3": "FLK",
+      "#": "238",
+      "Name": "Falkland Islands (Malvinas)"
+    },
+    {
+      "CC": "SA",
+      "a-2": "GF",
+      "a-3": "GUF",
+      "#": "254",
+      "Name": "French Guiana"
+    },
+    {
+      "CC": "SA",
+      "a-2": "GY",
+      "a-3": "GUY",
+      "#": "328",
+      "Name": "Guyana, Co-operative Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "PY",
+      "a-3": "PRY",
+      "#": "600",
+      "Name": "Paraguay, Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "PE",
+      "a-3": "PER",
+      "#": "604",
+      "Name": "Peru, Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "SR",
+      "a-3": "SUR",
+      "#": "740",
+      "Name": "Suriname, Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "UY",
+      "a-3": "URY",
+      "#": "858",
+      "Name": "Uruguay, Oriental Republic of"
+    },
+    {
+      "CC": "SA",
+      "a-2": "VE",
+      "a-3": "VEN",
+      "#": "862",
+      "Name": "Venezuela, Bolivarian Republic of"
+    }
+   ]

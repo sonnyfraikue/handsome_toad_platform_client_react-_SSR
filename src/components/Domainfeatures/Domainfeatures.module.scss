@@ -1,0 +1,16 @@
+.Domainfeatures {
+  .featurescol {
+    border: 1px solid rgb(233, 233, 233);
+    margin-left: 20px;
+    padding-top: 1rem;
+    font-size: 16px;
+    transition: all 550ms linear;
+  }
+  .featurescol:hover{
+      background-color: rgb(230, 230, 230);
+      border: 1px solid rgb(204, 203, 203);
+  }
+  .featurescol:first-child {
+    margin-left: 0;
+  }
+}

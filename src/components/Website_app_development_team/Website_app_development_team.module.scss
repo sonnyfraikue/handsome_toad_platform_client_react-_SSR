@@ -1,0 +1,11 @@
+@import "../../assets/scss/paper-dashboard/variables";
+.Website_app_development_team {
+    .card{
+        max-width: 25rem;
+    }
+    .display-4{
+        @media (max-width: $sm-screen-size) {
+            font-size: 1.5rem;
+          }
+    }
+}

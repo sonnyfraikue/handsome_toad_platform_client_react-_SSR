@@ -1,0 +1,22 @@
+.Tile {
+    font-size: 17px;
+        .mh-50 {
+            min-height: 200px;
+        }
+        .readmore {
+            color:green;
+        }
+        .Tile-title {
+            font-weight: 300;
+            margin-bottom: 25px;
+            letter-spacing: 4px;
+            font-size: 18px;
+        }
+        .Tile-header {
+            font-weight: 400;
+            text-align: center;
+        }
+        .erm{
+            color: yellow !important;
+        }
+}
