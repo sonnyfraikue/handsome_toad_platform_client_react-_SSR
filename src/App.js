@@ -27,69 +27,60 @@ import Confirmation from "./components/Confirmation/Confirmation";
 import Payment from "./components/Payment/Payment";
 import Domain from "./components/Domain/Domain";
 import Delegation from "./components/Delegation/Delegation";
-import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
-import storeObj from "./store";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 
-const { store, persistor } = storeObj();
-
 const App = () => (
   <div className="App">
-    <Provider store={store}>
-      <Nav />
-      <PersistGate loading={null} persistor={persistor}>
-        <Switch>
-          <Route exact path="/" component={Landingpage} />
-          <Route exact path="/login" component={Loginc} />
-          <Route path="/register" component={Register} />
-          <Route exact path="/contact" component={Contact} />
-          <Route path="/privacy" component={Privacy} />
-          <Route path="/products" component={Products} />
-          <Route path="/terms" component={Terms} />
-          <Route path="/forgot-password" component={ForgotPassword} />
-          <Route path="/hosting" component={Hosting} />
-          <Route path="/development" component={Development} />
-          <Route path="/under_construction" component={Under_construction} />
-          <Route
-            path="/Static website & domain"
-            component={Static_website_domain}
-          />
-          <Route
-            path="/Dynamic website + development team"
-            component={Dynamic_website_development_team}
-          />
-          <Route
-            path="/Website + app + development team"
-            component={Website_app_development_team}
-          />
-          <Route path="/results" component={Results} />
-          <Route path="/basket" component={Basket} />
-          <Route path="/checkout" component={Checkout} />
-          <Route path="/confirmation" component={Confirmation} />
-          <Route path="/payment" component={Payment} />
-          <PrivateRoute exact path="/domains">
-            <Domains />
-          </PrivateRoute>
-          <PrivateRoute exact path="/domains/:domain_id">
-            <Domain />
-          </PrivateRoute>
-          <PrivateRoute exact path="/domains/:domain_id/edit-delegation">
-            <Delegation />
-          </PrivateRoute>
-          <PrivateRoute path="/dashboard">
-            <Dashboard />
-          </PrivateRoute>
-          <PrivateRoute path="/my-account">
-            <MyAccount />
-          </PrivateRoute>
-          <Route component={NotFound} />
-        </Switch>
-      </PersistGate>
-      <Footer />
-    </Provider>
+    <Nav />
+    <Switch>
+      <Route exact path="/" component={Landingpage} />
+      <Route exact path="/login" component={Loginc} />
+      <Route path="/register" component={Register} />
+      <Route exact path="/contact" component={Contact} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/products" component={Products} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/forgot-password" component={ForgotPassword} />
+      <Route path="/hosting" component={Hosting} />
+      <Route path="/development" component={Development} />
+      <Route path="/under_construction" component={Under_construction} />
+      <Route
+        path="/Static website & domain"
+        component={Static_website_domain}
+      />
+      <Route
+        path="/Dynamic website + development team"
+        component={Dynamic_website_development_team}
+      />
+      <Route
+        path="/Website + app + development team"
+        component={Website_app_development_team}
+      />
+      <Route path="/results" component={Results} />
+      <Route path="/basket" component={Basket} />
+      <Route path="/checkout" component={Checkout} />
+      <Route path="/confirmation" component={Confirmation} />
+      <Route path="/payment" component={Payment} />
+      <PrivateRoute exact path="/domains">
+        <Domains />
+      </PrivateRoute>
+      <PrivateRoute exact path="/domains/:domain_id">
+        <Domain />
+      </PrivateRoute>
+      <PrivateRoute exact path="/domains/:domain_id/edit-delegation">
+        <Delegation />
+      </PrivateRoute>
+      <PrivateRoute path="/dashboard">
+        <Dashboard />
+      </PrivateRoute>
+      <PrivateRoute path="/my-account">
+        <MyAccount />
+      </PrivateRoute>
+      <Route component={NotFound} />
+    </Switch>
+    <Footer />
   </div>
 );
 

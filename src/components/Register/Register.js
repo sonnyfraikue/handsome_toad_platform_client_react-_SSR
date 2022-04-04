@@ -9,6 +9,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import { Helmet } from "react-helmet";
+import { useSelector, useDispatch } from "react-redux";
 
 const Register = ({ history }) => {
   const { register, handleSubmit, errors, formState } = useForm({
@@ -48,7 +49,7 @@ const Register = ({ history }) => {
     [history]
   );
 
-  const { currentUser } = useContext(AuthContext);
+  const currentUser = useSelector((state) => state.currentUser);
 
   if (currentUser) {
     return <Redirect to="/dashboard" />;

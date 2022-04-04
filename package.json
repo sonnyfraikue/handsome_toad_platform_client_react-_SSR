@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "file-loader": "^4.3.0",
     "firebase": "^8.2.9",
+    "fs": "*",
     "global": "^4.4.0",
     "history": "4.10.1",
     "immer": "^9.0.1",
@@ -61,4 +62,5 @@
     "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.2"
   }
+  
 }

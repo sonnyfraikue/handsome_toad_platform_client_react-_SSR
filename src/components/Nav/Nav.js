@@ -11,6 +11,7 @@ import Basket from "../Basket/Basket";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
 import countriesJson from "../../countries.json";
 import countries from "@doubco/countries";
+import {config} from "../../../config";
 
 const Nav = ({ history }) => {
   const currentUser = useSelector((state) => state.currentUser);
@@ -43,17 +44,18 @@ const Nav = ({ history }) => {
     const capCC = value.alpha2.toUpperCase();
     const apiConfig = {
       headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_FIREBASE_API_KEY}`,
+        Authorization: `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
         "Content-Type": "application/json",
       },
     };
     axios
       .get(
-        process.env.REACT_APP_ABSTRACTAPI_VATRATE_API_URL +
+        config.RAZZLE_ABSTRACTAPI_VATRATE_API_URL +
           `?country_code=${capCC}`,
         apiConfig
       )
       .then((data) => {
+        console.log(data)
         let localeObj = countries.data[capCC];
         let rateObj = data.data.err
           ? []
@@ -67,7 +69,7 @@ const Nav = ({ history }) => {
               domain:
                 process.env.NODE_ENV === "development"
                   ? "http://localhost:3000/"
-                  : process.env.REACT_APP_DOMAIN,
+                  : config.RAZZLE_DOMAIN,
               code: localeObj.code,
               taxrate: data.data.err ? null : rateObj[0].rate * 100,
               cc: capCC,
@@ -76,7 +78,7 @@ const Nav = ({ history }) => {
         });
         axios
           .get(
-            process.env.REACT_APP_EXCHANGE_RATE_API_URL +
+            config.RAZZLE_EXCHANGE_RATE_API_URL +
               `?from=${suggestedDomains[0].pricing.currency}&to=${localeObj.currency}&amount=${searchedDomain.data.registration_price}`
           )
           .then((data) => {
@@ -110,7 +112,7 @@ const Nav = ({ history }) => {
         suggestedDomains.map((each, index) => {
           axios
             .get(
-              process.env.REACT_APP_EXCHANGE_RATE_API_URL +
+              config.RAZZLE_EXCHANGE_RATE_API_URL +
                 `?from=${each.pricing.currency}&to=${localeObj.currency}&amount=${each.availability.data.registration_price}`
             )
             .then((data) => {
@@ -157,7 +159,7 @@ const Nav = ({ history }) => {
         //       domain:
         //         process.env.NODE_ENV === "development"
         //           ? "http://localhost:3000/"
-        //           : process.env.REACT_APP_DOMAIN,
+        //           : config.RAZZLE_DOMAIN,
         //       code: "+1",
         //       vatrate: null,
         //       cc: "US",
