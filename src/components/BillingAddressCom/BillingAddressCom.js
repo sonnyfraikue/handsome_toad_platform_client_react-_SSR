@@ -5,6 +5,7 @@ import countries from "../../assets/countries.json";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import axios from "axios";
+import {config} from "../../../config";
 
 
 const BillingAddressCom = ({ history, locale }) => {
@@ -32,14 +33,14 @@ const BillingAddressCom = ({ history, locale }) => {
       };
       const apiConfig = {
         headers: {
-          "Authorization": `Bearer ${process.env.REACT_APP_FIREBASE_API_KEY}`,
+          "Authorization": `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
           "Content-Type": "application/json",
         },
       };
 
       axios({
         method: "post",
-        url: process.env.REACT_APP_DNSIMPLE_GETCON_API_URL,
+        url: config.RAZZLE_DNSIMPLE_GETCON_API_URL,
         data: sendFormData,
         apiConfig,
       })
@@ -57,7 +58,7 @@ const BillingAddressCom = ({ history, locale }) => {
           }
           axios({
             method: "post",
-            url: process.env.REACT_APP_DNSIMPLE_CREATECON_API_URL,
+            url: config.RAZZLE_DNSIMPLE_CREATECON_API_URL,
             data: sendFormData,
             apiConfig,
           })

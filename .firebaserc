@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "ht-auth-dev"
+    "default": "ht-auth-prod"
   }
 }

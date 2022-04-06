@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
+import {config} from "../../../config";
 
 const DomainSearch = (props, ...rest) => {
   const { register, handleSubmit, formState } = useForm({
@@ -15,7 +16,7 @@ const DomainSearch = (props, ...rest) => {
   let currentSuggestions;
   const apiConfig = {
     headers: {
-      "Authorization": `Bearer ${process.env.REACT_APP_FIREBASE_API_KEY}`,
+      "Authorization": `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
       "Content-Type": "application/json",
     },
   };
@@ -53,7 +54,7 @@ const DomainSearch = (props, ...rest) => {
     //start
     axios
       .get(
-        process.env.REACT_APP_GODADDY_PRODUCTION_API_URL_SUGGEST +
+        config.RAZZLE_GODADDY_PRODUCTION_API_URL_SUGGEST +
           `?search=${cleanedSearchStr}`,
           apiConfig
       )
@@ -61,7 +62,7 @@ const DomainSearch = (props, ...rest) => {
         currentSuggestions = data;
         axios
           .get(
-            process.env.REACT_APP_GODADDY_PRODUCTION_API_URL_SEARCH +
+            config.RAZZLE_GODADDY_PRODUCTION_API_URL_SEARCH +
               `?search=${cleanedSearchStr}`,
               apiConfig
           )
@@ -82,7 +83,7 @@ const DomainSearch = (props, ...rest) => {
               );
               //paste
               axios
-                .post(process.env.REACT_APP_GODADDY_PRODUCTION_API_URL_SEARCH, {
+                .post(config.RAZZLE_GODADDY_PRODUCTION_API_URL_SEARCH, {
                   search: currentSuggestionsString,
                 },apiConfig)
                 .then(({ data }) => {
@@ -94,8 +95,7 @@ const DomainSearch = (props, ...rest) => {
                     //paste
                     return axios
                       .get(
-                        process.env
-                          .REACT_APP_DNSIMPLE_PRODUCTION_API_URL_SEARCH +
+                        config.RAZZLE_DNSIMPLE_PRODUCTION_API_URL_SEARCH +
                           `?search=${each.domain}`,
                           apiConfig
                       )
@@ -109,7 +109,7 @@ const DomainSearch = (props, ...rest) => {
                           let availabilityObj = [];
                           let pricingObj = [];
                          
-                          return axios.get(process.env.REACT_APP_EXCHANGE_RATE_API_URL+`?from=USD&to=${locale.currency}&amount=${data.data.data.registration_price}`).then((data)=>{
+                          return axios.get(config.RAZZLE_EXCHANGE_RATE_API_URL+`?from=USD&to=${locale.currency}&amount=${data.data.data.registration_price}`).then((data)=>{
                             priceObj.data.registration_price = data.data.result
                             each.currency = locale.currency;
                             availabilityObj.push(priceObj);
@@ -170,13 +170,13 @@ const DomainSearch = (props, ...rest) => {
     setLoadingObj({ loading: true });
     axios
       .get(
-        process.env.REACT_APP_DNSIMPLE_PRODUCTION_API_URL_SEARCH +
+        config.RAZZLE_DNSIMPLE_PRODUCTION_API_URL_SEARCH +
           `?search=${cleanedSearchStr}`,apiConfig
       )
       .then(({ data }) => {
         const newData1 = data;
         if (!data.err) {
-          axios.get(process.env.REACT_APP_EXCHANGE_RATE_API_URL+`?from=USD&to=${locale.currency}&amount=${data.data.data.registration_price}`).then((data)=>{
+          axios.get(config.RAZZLE_EXCHANGE_RATE_API_URL+`?from=USD&to=${locale.currency}&amount=${data.data.data.registration_price}`).then((data)=>{
            let newPrice = data.data.result;
            newData1.data.data.registration_price = newPrice;
            dispatch({

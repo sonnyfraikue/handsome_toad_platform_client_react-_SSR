@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import AlertDismissable from "../Alert/Alert";
+import {config} from "../../../config";
 
 var options = {
   styles: {
@@ -33,7 +34,7 @@ const MollieCheckout = ({ history }) => {
   });
   const apiConfig = {
     headers: {
-      "Authorization": `Bearer ${process.env.REACT_APP_FIREBASE_API_KEY}`,
+      "Authorization": `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
       "Content-Type": "application/json",
     },
   };
@@ -43,7 +44,7 @@ const MollieCheckout = ({ history }) => {
     script.src = "https://js.mollie.com/v1/mollie.js";
     script.addEventListener("load", () => {
       setMollie(
-        window.Mollie(process.env.REACT_APP_MOLLIE_PROFILEID, { locale: locale.languange })
+        window.Mollie(config.RAZZLE_MOLLIE_PROFILEID, { locale: locale.languange })
       );
     });
     document.body.appendChild(script);
@@ -93,8 +94,8 @@ const MollieCheckout = ({ history }) => {
       ...{ locale: locale.languange },
       ...{ currency: locale.currency },
       ...{ order_number: orderNumber },
-      ...{ redirect_url: `${process.env.REACT_APP_DOMAIN}/confirmation/${orderNumber}` },
-      ...{ webhook_url: `${process.env.REACT_APP_DOMAIN}/confirmation/${orderNumber}` },
+      ...{ redirect_url: `${config.RAZZLE_DOMAIN}/confirmation/${orderNumber}` },
+      ...{ webhook_url: `${config.RAZZLE_DOMAIN}/confirmation/${orderNumber}` },
       ...{ method: "creditcard" },
       ...{ name: domainDesc },
       ...{ quantity: basketObj.length },
@@ -106,7 +107,7 @@ const MollieCheckout = ({ history }) => {
     };
     axios({
       method: "post",
-      url: process.env.REACT_APP_MOLLIE_CREATE_ORDER_API_URL,
+      url: config.RAZZLE_MOLLIE_CREATE_ORDER_API_URL,
       data: tempObj,
       apiConfig,
     })
@@ -148,7 +149,7 @@ const MollieCheckout = ({ history }) => {
 
     axios({
       method: "post",
-      url: process.env.REACT_APP_DNSIMPLE_REGDOM_API_URL,
+      url: config.RAZZLE_DNSIMPLE_REGDOM_API_URL,
       data: sendRegData,
       apiConfig,
     })

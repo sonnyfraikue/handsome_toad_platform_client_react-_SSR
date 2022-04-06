@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./Domains.module.scss";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
+import {config} from "../../../config";
 
 const Domains = () => {
   const currentUser = useSelector((state) => state.currentUser);
@@ -11,14 +12,14 @@ const Domains = () => {
   const dispatch = useDispatch();
   const apiConfig = {
     headers: {
-      "Authorization": `Bearer ${process.env.REACT_APP_FIREBASE_API_KEY}`,
+      "Authorization": `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
       "Content-Type": "application/json",
     },
   };
 
   const fetchContacts = () => {
     return axios
-      .get(process.env.REACT_APP_DNSIMPLE_GETCONS_API_URL,apiConfig)
+      .get(config.RAZZLE_DNSIMPLE_GETCONS_API_URL,apiConfig)
       .then(({ data }) => {
         dispatch({
           type: "add-contact",
@@ -34,7 +35,7 @@ const Domains = () => {
   const fetchDomains = (registrant_id) => {
     
     return axios
-      .get(process.env.REACT_APP_DNSIMPLE_FETCH_DOMAIN_API_URL + `?registrant_id=${registrant_id}`,apiConfig)
+      .get(config.RAZZLE_DNSIMPLE_FETCH_DOMAIN_API_URL + `?registrant_id=${registrant_id}`,apiConfig)
       .then(({ data }) => {
         return data.data.data;
       })

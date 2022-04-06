@@ -6,6 +6,7 @@ import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import { useSelector, useDispatch } from "react-redux";
 import { Helmet } from "react-helmet";
+import {config} from "../../../config";
 
 const redirectPath = process.env.NODE_ENV == 'development' ? '/dashboard':'/under_construction';
 

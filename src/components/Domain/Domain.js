@@ -4,6 +4,7 @@ import styles from "./Domain.module.scss";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
+import {config} from "../../../config";
 
 const Domain = (props, ...rest) => {
   const { domain_id } = useParams();
@@ -12,7 +13,7 @@ const Domain = (props, ...rest) => {
   const dispatch = useDispatch();
   const apiConfig = {
     headers: {
-      "Authorization": `Bearer ${process.env.REACT_APP_FIREBASE_API_KEY}`,
+      "Authorization": `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
       "Content-Type": "application/json",
     },
   };
@@ -21,7 +22,7 @@ const Domain = (props, ...rest) => {
     const fetchDelegations = () => {
       return axios
         .get(
-          process.env.REACT_APP_DNSIMPLE_DELEGATION_API_URL +
+          config.RAZZLE_DNSIMPLE_DELEGATION_API_URL +
             `?domain_id=${domain_id}`,
             apiConfig
         )
