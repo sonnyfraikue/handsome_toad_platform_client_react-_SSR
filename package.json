@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start:local": "razzle start",
-    "build": "NODE_ENV=production razzle build --noninteractive",
+    "build": "razzle build --noninteractive",
     "test": "razzle test --env=jsdom",
-    "start": "NODE_ENV=production node build/server.js"
+    "start:prod": "node build/server.js"
   },
   "dependencies": {
     "@doubco/countries": "^1.1.5",
