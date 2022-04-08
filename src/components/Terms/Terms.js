@@ -2,25 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Terms.module.scss';
 import { Helmet } from "react-helmet";
+import { useSelector } from "react-redux";
 
 const Terms = () => {
+  const locale = useSelector((state) => state.locale);
   return (
   <div className="container card">
     <Helmet>
-        <title>Privacy Policy.</title>
+        <title>Terms and conditions.</title>
 
         <meta
           property="og:title"
           name="title"
-          content="Privacy Policy."
+          content="Terms and conditions."
         />
         <meta
           property="og:description"
           name="description"
-          content="Privacy Policy"
+          content="Terms and conditions"
         />
-        <meta property="og:url" content="https://thehandsometoad.com/terms" />
+        <meta property="og:url" content={`${locale.domain}/terms`} />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={`${locale.domain}/images/landing-page.png`}
+        />
       </Helmet>
 <h1 className="lead">TERMS OF SERVICE</h1>
 

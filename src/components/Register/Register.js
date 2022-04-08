@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 import { useSelector, useDispatch } from "react-redux";
 
 const Register = ({ history }) => {
+  const locale = useSelector((state) => state.locale);
   const { register, handleSubmit, errors, formState } = useForm({
     mode: "onChange",
   });
@@ -69,8 +70,12 @@ const Register = ({ history }) => {
           name="description"
           content="Sign up today and build your dreams."
         />
-        <meta property="og:url" content="https://thehandsometoad.com/register" />
+         <meta property="og:url" content={`${locale.domain}/register`} />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={`${locale.domain}/images/landing-page.png`}
+        />
       </Helmet>
         <AlertDismissable
           message={formErrors.message}

@@ -2,6 +2,7 @@
 .Nav {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
     .countrySelect {
       input{
         border: 1px solid #ddd !important;
@@ -19,7 +20,10 @@
         position: relative;
         margin-left: 5px;
       }
-      
+      .nav-link {
+        color: #333 !important;
+        text-transform: capitalize !important;
+      }
       .pulsate::before {
         content: '';
         display: block;

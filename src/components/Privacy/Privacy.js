@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Privacy.module.scss';
 import { Helmet } from "react-helmet";
+import { useSelector } from "react-redux";
 
 const Privacy = () => {
-
+  const locale = useSelector((state) => state.locale);
   return (
   <div className="container card">
           <Helmet>
@@ -20,8 +21,12 @@ const Privacy = () => {
           name="description"
           content="Privacy Policy"
         />
-        <meta property="og:url" content="https://thehandsometoad.com/privacy" />
+         <meta property="og:url" content={`${locale.domain}/privacy`} />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={`${locale.domain}/images/landing-page.png`}
+        />
       </Helmet>
     
     <h1 className="lead">Privacy Policy for The handsome toad ltd</h1>
@@ -30,7 +35,7 @@ const Privacy = () => {
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
-<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Thehandsometoad.com. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.generateprivacypolicy.com/#wizard">Free Privacy Policy Generator</a>.</p>
+<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Thehandsometoad.com. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 
 <p className="lead">Consent</p>
 

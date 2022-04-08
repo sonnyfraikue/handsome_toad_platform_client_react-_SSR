@@ -102,9 +102,9 @@ const Landingpage = (props) => {
         />
         <meta
           property="og:image"
-          content="%PUBLIC_URL%/images/landing-page.png"
+          content={`${locale.domain}/images/landing-page.png`}
         />
-        <meta property="og:url" content="https://thehandsometoad.com" />
+        <meta property="og:url" content={locale.domain} />
         <meta property="og:type" content="website" />
       </Helmet>
       <div className={styles.Landingpage}>
@@ -137,7 +137,7 @@ const Landingpage = (props) => {
         </div>
 
         <div className="container mt-5 mb-5">
-          <div className={"row justify-content-center "}>
+          <div className={"row justify-content-evenly "}>
             {state.productCards.map((productCard) => (
               <Tile
                 key={productCard.id}

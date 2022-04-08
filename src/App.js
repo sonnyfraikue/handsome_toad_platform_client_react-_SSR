@@ -1,5 +1,10 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+
+import "./App.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/paper-dashboard.min.css";
 import Landingpage from "./components/Landingpage/Landingpage";
 import Loginc from "./components/Login/Login";
 import Register from "./components/Register/Register";
@@ -26,7 +31,6 @@ import Confirmation from "./components/Confirmation/Confirmation";
 import Payment from "./components/Payment/Payment";
 import Domain from "./components/Domain/Domain";
 import Delegation from "./components/Delegation/Delegation";
-import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 

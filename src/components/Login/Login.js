@@ -11,6 +11,7 @@ import {config} from "../../../config";
 const redirectPath = process.env.NODE_ENV == 'development' ? '/dashboard':'/under_construction';
 
 const Login = ({ history, ...rest }) => {
+  const locale = useSelector((state) => state.locale);
   const currentUser = useSelector((state) => state.currentUser);
   const dispatch = useDispatch();
   const { register, handleSubmit, errors, formState } = useForm({
@@ -60,8 +61,12 @@ const Login = ({ history, ...rest }) => {
           name="description"
           content="Login securely and get work done."
         />
-        <meta property="og:url" content="https://thehandsometoad.com/login" />
+        <meta property="og:url" content={`${locale.domain}/login`} />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={`${locale.domain}/images/landing-page.png`}
+        />
       </Helmet>
         <AlertDismissable
           message={formErrors.message}

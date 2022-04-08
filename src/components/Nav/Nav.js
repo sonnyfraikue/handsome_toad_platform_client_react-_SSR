@@ -259,7 +259,7 @@ const Nav = ({ history }) => {
                 >
                   <li>
                     <a
-                      className={styles["dropdown-item"] + " dropdown-item"}
+                      className={styles["dropdown-item"] + ` dropdown-item ${styles["nav-link"]}`}
                       href="/Static website & domain"
                     >
                       Website builder & domain
@@ -289,7 +289,7 @@ const Nav = ({ history }) => {
                 {currentUser && process.env.NODE_ENV !== "production" ? (
                   <li className="nav-item">
                     <Link
-                      className="nav-link"
+                      className={`nav-link ${styles["nav-link"]}`}
                       to="/dashboard"
                       onClick={() => setTogglerState({ isVisible: false })}
                     >
@@ -302,7 +302,7 @@ const Nav = ({ history }) => {
                 {parseInt(basket.length) > 0 ? (
                   <li className="nav-item">
                     <Link
-                      className="nav-link"
+                      className={`nav-link ${styles["nav-link"]}`}
                       to="#"
                       onClick={() => {
                         handleShow();
@@ -322,7 +322,7 @@ const Nav = ({ history }) => {
                 )}
                 {currentUser && process.env.NODE_ENV !== "production" ? (
                   <li className="nav-item">
-                    <Link className="nav-link" to="/my-account">
+                    <Link className={`nav-link ${styles["nav-link"]}`} to="/my-account">
                       My Account
                     </Link>
                   </li>
@@ -332,7 +332,7 @@ const Nav = ({ history }) => {
 
                 {currentUser ? (
                   <li className="nav-item">
-                    <Link className="nav-link" to="/domains">
+                    <Link className={`nav-link ${styles["nav-link"]}`} to="/domains">
                       My Domains
                     </Link>
                   </li>
@@ -342,7 +342,7 @@ const Nav = ({ history }) => {
                 <li className="nav-item">
                   {!currentUser ? (
                     <Link
-                      className="nav-link"
+                      className={`nav-link ${styles["nav-link"]}`}
                       to="/register"
                       onClick={() => {
                         setTogglerState({ isVisible: false });
@@ -357,7 +357,7 @@ const Nav = ({ history }) => {
                 <li className="nav-item">
                   {!currentUser ? (
                     <Link
-                      className="nav-link"
+                      className={`nav-link ${styles["nav-link"]}`}
                       to="/login"
                       onClick={() => {
                         setTogglerState({ isVisible: false });

@@ -3,8 +3,11 @@ import PropTypes from "prop-types";
 import styles from "./Dynamic_website_development_team.module.scss";
 import Pricing from "../Pricing/Pricing";
 import { Helmet } from "react-helmet";
+import { useSelector } from "react-redux";
 
-const Dynamic_website_development_team = () => (
+const Dynamic_website_development_team = () => {
+  const locale = useSelector((state) => state.locale);
+  return(
   <div
     className={
       "container-fluid " + styles.Dynamic_website_development_team
@@ -23,8 +26,12 @@ const Dynamic_website_development_team = () => (
           name="description"
           content="Static/dynamic website and development team"
         />
-        <meta property="og:url" content="https://thehandsometoad.com/Dynamic%20website%20+%20development%20team" />
+        <meta property="og:url" content={`${locale.domain}/Dynamic%20website%20+%20development%20team`} />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={`${locale.domain}/images/landing-page.png`}
+        />
       </Helmet>
     <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 className={styles['display-4']+" display-4"}>STATIC/DYNAMIC WEBSITE + DEVELOPMENT TEAM</h1>
@@ -46,7 +53,7 @@ const Dynamic_website_development_team = () => (
     </div>
     <Pricing option="2" />
   </div>
-);
+)};
 
 Dynamic_website_development_team.propTypes = {};
 
