@@ -6,7 +6,7 @@
     "start:local": "razzle start",
     "build": "razzle build --noninteractive",
     "test": "razzle test --env=jsdom",
-    "start": "NODE_ENV=production node build/server.js"
+    "start": "node build/server.js"
   },
   "dependencies": {
     "@doubco/countries": "^1.1.5",
