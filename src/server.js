@@ -4,7 +4,6 @@ import { StaticRouter } from "react-router-dom";
 import express from "express";
 import { renderToString } from "react-dom/server";
 import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
 import storeObj from "./store";
 import { Helmet } from "react-helmet";
 
