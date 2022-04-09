@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/THT_fullcolour_Text.svg";
 import styles from "./Nav.module.scss";
-import app from "../../../firebase";
+import app from "../../firebase";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import CountrySelect from "react-bootstrap-country-select";
@@ -366,7 +366,7 @@ const Nav = ({ history }) => {
                       Sign in
                     </Link>
                   ) : (
-                    <a className="nav-link" href="#" onClick={onSubmit}>
+                    <a className={`nav-link ${styles["nav-link"]}`} href="#" onClick={onSubmit}>
                       Sign out
                     </a>
                   )}

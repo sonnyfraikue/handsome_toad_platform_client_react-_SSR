@@ -4,7 +4,7 @@ import { Link, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Register.module.scss";
 import ImageGen from "../ImageGen/ImageGen";
-import app from "../../../firebase";
+import app from "../../firebase";
 import { AuthContext } from "../../contexts/AuthContext";
 import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";

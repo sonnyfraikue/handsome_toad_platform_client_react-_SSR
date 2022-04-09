@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./ForgotPassword.module.scss";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import app from "../../../firebase";
+import app from "../../firebase";
 import AlertDismissable from "../Alert/Alert";
 
 const ForgotPassword = ({ history }) => {

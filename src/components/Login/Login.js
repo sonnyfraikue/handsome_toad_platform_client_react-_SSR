@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, Redirect } from "react-router-dom";
-import app from "../../../firebase";
+import app from "../../firebase";
 import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import { useSelector, useDispatch } from "react-redux";
