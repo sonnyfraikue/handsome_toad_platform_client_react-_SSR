@@ -7,7 +7,6 @@ import currencyFormatter from "currency-formatter";
 import { useLocation } from "react-router-dom";
 
 const Results = (props) => {
-  document.title = "Results - Choose a domain to host your website.";
   const searchedDomain = useSelector((state) => state.searchedDomain);
   const locale = useSelector((state) => state.locale);
   const pricedDomain = useSelector((state) => state.pricedDomain);
@@ -39,7 +38,7 @@ const Results = (props) => {
 
       {pricedDomain && pricedDomain.data.available && (
         <div
-          className={styles.alertSuccess + ` alert alert-success bg-secondary`}
+          className={styles.alertSuccess + ` alert bg-secondary`}
           role="alert"
         >
           <h4 className="alert-heading">We have great news!</h4>

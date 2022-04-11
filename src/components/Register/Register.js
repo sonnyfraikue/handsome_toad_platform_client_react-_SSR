@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, Redirect } from "react-router-dom";
+import { Link, Redirect, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Register.module.scss";
 import ImageGen from "../ImageGen/ImageGen";
@@ -10,8 +10,10 @@ import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import Meta from "../Meta/Meta";
 import { useSelector, useDispatch } from "react-redux";
+import Regtitle from "../Regtitle/Regtitle";
 
 const Register = ({ history }) => {
+  let params = useParams()
   const locale = useSelector((state) => state.locale);
   const { register, handleSubmit, errors, formState } = useForm({
     mode: "onChange",
@@ -56,8 +58,8 @@ const Register = ({ history }) => {
     return <Redirect to="/dashboard" />;
   } else {
     return (
-      <div className={`${styles.Register}`}>
-         <Meta ogtype="website" canonical={`${locale.domain}/register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}/images/register-page.png`} ogurl={`${locale.domain}/register`} ogdescription="Sign up today and build your dreams." ogtitle="Create your account."/>
+      <div className={`${styles.Register} container`}>
+         <Meta ogtype="website" canonical={`${locale.domain}register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/register-page.png`} ogurl={`${locale.domain}register`} ogdescription="Sign up today and build your dreams." ogtitle="Create your account."/>
         <AlertDismissable
           message={formErrors.message}
           toggler={setFormError}
@@ -66,7 +68,7 @@ const Register = ({ history }) => {
         ></AlertDismissable>
         <div className="row justify-content-center">
           <div className="col-sm-7 card m-3 pt-4">
-            <h5 className="card-text">Create your account</h5>
+            <Regtitle registerplan={params.registerplan} registerpackage={params.registerpackage} />
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="row mb-3">
                 <label

@@ -1,4 +1,5 @@
 import produce from "immer";
+import { config } from "../config";
 
 const intialState = {
   currentUser: null,
@@ -35,7 +36,7 @@ const intialState = {
     domain:
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000/"
-        : process.env.REACT_APP_DOMAIN,
+        : config.RAZZLE_DOMAIN,
     code: "+1",
     vatrate: null,
     cc: "US",

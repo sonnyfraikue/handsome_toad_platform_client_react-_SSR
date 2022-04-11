@@ -88,7 +88,7 @@ const Landingpage = (props) => {
   };
   return (
     <div className="container-fluid">
-      <Meta ogtype="website" canonical={`${locale.domain}`} keywords="software development, ios and android apps, domain registration" ogimage={`${locale.domain}/images/landing-page.png`} ogurl={`${locale.domain}`} ogdescription="Our intuitive GUI and on-demand AGILE development team will create your dreams. Our development model allows you the flexibility of building and deploying in chunks at your own convenience" ogtitle="No nonsense software and domain solutions."/>
+      <Meta ogtype="website" canonical={`${locale.domain}`} keywords="software development, ios and android apps, domain registration" ogimage={`${locale.domain}images/landing-page.png`} ogurl={`${locale.domain}`} ogdescription="Our intuitive GUI and on-demand AGILE development team will create your dreams. Our development model allows you the flexibility of building and deploying in chunks at your own convenience" ogtitle="No nonsense software and domain solutions."/>
       <div className={styles.Landingpage}>
         <div className={"row " + styles.Searchdomain}>
           <div className={"col-md-6 " + styles["mt-7"]}>

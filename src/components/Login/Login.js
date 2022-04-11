@@ -48,7 +48,7 @@ const Login = ({ history, ...rest }) => {
   if (!currentUser) {
     return (
       <div className="container">
-        <Meta ogtype="website" canonical={`${locale.domain}/login`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}/images/login-page.png`} ogurl={`${locale.domain}/login`} ogdescription="Login securely and get work done." ogtitle="Login securely and get work done."/>
+        <Meta ogtype="website" canonical={`${locale.domain}login`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/login-page.png`} ogurl={`${locale.domain}login`} ogdescription="Login securely and get work done." ogtitle="Login securely and get work done."/>
         <AlertDismissable
           message={formErrors.message}
           toggler={setFormError}

@@ -7,7 +7,7 @@ const Clientslist = () => (
       <div className="col-sm pt-3">
         <h2 className="lead">Our clients.</h2>
       </div>
-    <div className="d-flex justify-content-center align-items-center">
+    <div className="d-flex flex-wrap justify-content-center align-items-center">
       {/* <div className="p-2">
         <img
           src="/images/shakespearesglobe-logo.png"

@@ -9,7 +9,7 @@ const Privacy = () => {
   const locale = useSelector((state) => state.locale);
   return (
   <div className="container card pt-4">
-    <Meta ogtype="website" canonical={`${locale.domain}/privacy`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}/images/privacy-page.png`} ogurl={`${locale.domain}/privacy`} ogdescription="Privacy Policy for The handsome toad ltd" ogtitle="Privacy Policy."/>
+    <Meta ogtype="website" canonical={`${locale.domain}privacy`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}images/privacy-page.png`} ogurl={`${locale.domain}privacy`} ogdescription="Privacy Policy for The handsome toad ltd" ogtitle="Privacy Policy."/>
     
     <h1 className="lead">Privacy Policy for The handsome toad ltd</h1>
 

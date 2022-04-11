@@ -8,7 +8,7 @@ const Contact = () => {
   const locale = useSelector((state) => state.locale);
   return (
     <div className={`${styles.Contact} container mt-3`}>
-      <Meta ogtype="website" canonical={`${locale.domain}/contact`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}/images/contact-page.png`} ogurl={`${locale.domain}/contact`} ogdescription="We are on-hand to assist you 24/7" ogtitle="Contact our friendly support."/>
+      <Meta ogtype="website" canonical={`${locale.domain}contact`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}images/contact-page.png`} ogurl={`${locale.domain}contact`} ogdescription="We are on-hand to assist you 24/7" ogtitle="Contact our friendly support."/>
       <h1 className="lead">Contact us</h1>
       <address>
         <strong>The Handsometoad Toad Ltd</strong>

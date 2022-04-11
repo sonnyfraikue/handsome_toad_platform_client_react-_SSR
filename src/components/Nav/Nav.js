@@ -278,7 +278,7 @@ const Nav = ({ history }) => {
                   <li>
                     <a
                       className={styles["dropdown-item"] + " dropdown-item"}
-                      href="Website + app + development team"
+                      href="/Website + app + development team"
                       title="Website + app + development team"
                     >
                       Website + app + development team

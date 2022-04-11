@@ -10,8 +10,8 @@ const Pricing = (props) => {
     <div className={styles.Pricing}>
       <div className="container d-flex justify-content-around align-items-center">
         {parseInt(props.option) === 1 && (
-          <div className="card-deck mb-3 text-center">
-            <div className="card mb-4 box-shadow">
+          <div className="card-deck mb-3 text-center d-flex flex-wrap">
+            <div className={`${styles.card} card mb-4 box-shadow`}>
               <div className="card-header">
                 <h4 className="my-0 font-weight-normal">Free</h4>
               </div>
@@ -38,7 +38,7 @@ const Pricing = (props) => {
               </div>
             </div>
            
-            <div className="card mb-4 box-shadow">
+            <div className={`${styles.card} card mb-4 box-shadow`}>
               <div className="card-header">
                 <h4 className="my-0 font-weight-normal">Enterprise</h4>
               </div>
@@ -70,7 +70,7 @@ const Pricing = (props) => {
 
         {parseInt(props.option) === 2 && (
           <div className="card-deck mb-3 text-center">
-            <div className="card mb-4 box-shadow">
+            <div className={`${styles.card} card mb-4 box-shadow`}>
               <div className="card-header">
                 <h4 className="my-0 font-weight-normal">Enterprise</h4>
               </div>
@@ -90,7 +90,7 @@ const Pricing = (props) => {
                   <li>Help center access</li>
                 </ul>
                 <a
-                  href="register/Goldplan/Enterprise"
+                  href="/register/Goldplan/Enterprise"
                   title="register Goldplan Enterprise"
                   className={`${styles['btn-primary']} mt-auto btn btn-lg btn-block btn-primary`}
                 >
@@ -103,7 +103,7 @@ const Pricing = (props) => {
 
         {parseInt(props.option) === 3 && (
           <div className="card-deck mb-3 text-center">
-            <div className={styles.card + " card mb-4 box-shadow"}>
+            <div className={`${styles.card} card mb-4 box-shadow`}>
               <div className="card-header">
                 <h4 className="my-0 font-weight-normal">Enterprise</h4>
               </div>
@@ -124,11 +124,11 @@ const Pricing = (props) => {
                   <li>Help center access</li>
                 </ul>
                 <a
-                  href="contact"
-                  title="contact"
+                  href="/register/DiamondPlan/Enterprise"
+                  title="Diamond plan Enterprise"
                   className={`${styles['btn-primary']} mt-auto btn btn-lg btn-block btn-primary`}
                 >
-                  Contact us
+                  Get started
                 </a>
               </div>
             </div>

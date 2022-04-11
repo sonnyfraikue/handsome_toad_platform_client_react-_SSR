@@ -9,7 +9,7 @@ const Terms = () => {
   const locale = useSelector((state) => state.locale);
   return (
   <div className="container card pt-4">
-     <Meta ogtype="website" canonical={`${locale.domain}/terms`} keywords="software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}/images/terms-page.png`} ogurl={`${locale.domain}/terms`} ogdescription="Terms and conditions" ogtitle="Terms and conditions."/>
+     <Meta ogtype="website" canonical={`${locale.domain}terms`} keywords="software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/terms-page.png`} ogurl={`${locale.domain}terms`} ogdescription="Terms and conditions" ogtitle="Terms and conditions."/>
 <h1 className="lead">TERMS OF SERVICE</h1>
 
 <p className="lead">OVERVIEW</p>

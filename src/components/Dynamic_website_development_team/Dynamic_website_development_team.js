@@ -14,7 +14,7 @@ const Dynamic_website_development_team = () => {
       "container-fluid " + styles.Dynamic_website_development_team
     }
   >
-    <Meta ogtype="website" canonical={`${locale.domain}/Dynamic%20website%20+%20development%20team`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}/images/dynamic_website_development_team-page.png`} ogurl={`${locale.domain}/Dynamic%20website%20+%20development%20team`} ogdescription="Collaborate with our designers and your Account Manager to create your very own website design and bespoke functionality" ogtitle="Static or dynamic website and development team."/>
+    <Meta ogtype="website" canonical={`${locale.domain}Dynamic%20website%20+%20development%20team`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}images/dynamic_website_development_team-page.png`} ogurl={`${locale.domain}Dynamic%20website%20+%20development%20team`} ogdescription="Collaborate with our designers and your Account Manager to create your very own website design and bespoke functionality" ogtitle="Static or dynamic website and development team."/>
     <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 className={styles['display-4']+" display-4"}>STATIC/DYNAMIC WEBSITE + DEVELOPMENT TEAM</h1>
       <div className="row">

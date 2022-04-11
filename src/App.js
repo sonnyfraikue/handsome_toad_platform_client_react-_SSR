@@ -39,7 +39,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Landingpage} />
       <Route exact path="/login" component={Loginc} />
-      <Route path="/register" component={Register} />
+      <Route path="/register/:registerplan?/:registerpackage?" component={Register} />
       <Route exact path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/products" component={Products} />
