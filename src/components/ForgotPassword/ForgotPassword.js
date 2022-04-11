@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 import styles from "./ForgotPassword.module.scss";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { useSelector, useDispatch } from "react-redux";
 import app from "../../firebase";
 import AlertDismissable from "../Alert/Alert";
+import Meta from "../Meta/Meta";
 
 const ForgotPassword = ({ history }) => {
+  const locale = useSelector((state) => state.locale);
   const { register, handleSubmit, errors, formState } = useForm({
     mode: "onChange",
   });
@@ -51,6 +54,7 @@ const ForgotPassword = ({ history }) => {
 
   return (
     <div className={styles.ForgotPassword + " container"}>
+       <Meta ogtype="website" canonical={`${locale.domain}/register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}/images/forgot_password-page.png`} ogurl={`${locale.domain}/forgot-password`} ogdescription="Forgot password? we can help you recover your credentials." ogtitle="Forgot password."/>
       <AlertDismissable
         message={formErrors.message}
         toggler={setFormError}
@@ -62,7 +66,7 @@ const ForgotPassword = ({ history }) => {
       ></AlertDismissable>
 
       <div className="row justify-content-center">
-        <div className="col-sm-7 card m-3">
+        <div className="col-sm-7 card m-3 pt-4">
           <h5 className="card-text">Recover password</h5>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="row mb-3">

@@ -1,27 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Contact.module.scss";
-import { Helmet } from "react-helmet";
+import { useSelector } from "react-redux";
+import Meta from "../Meta/Meta";
 
 const Contact = () => {
+  const locale = useSelector((state) => state.locale);
   return (
     <div className={`${styles.Contact} container mt-3`}>
-      <Helmet>
-        <title>Contact our friendly support.</title>
-
-        <meta
-          property="og:title"
-          name="title"
-          content="Contact our friendly support."
-        />
-        <meta
-          property="og:description"
-          name="description"
-          content="We are on-hand to assist you 24/7"
-        />
-        <meta property="og:url" content="https://thehandsometoad.com/contact" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <Meta ogtype="website" canonical={`${locale.domain}/contact`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}/images/contact-page.png`} ogurl={`${locale.domain}/contact`} ogdescription="We are on-hand to assist you 24/7" ogtitle="Contact our friendly support."/>
       <h1 className="lead">Contact us</h1>
       <address>
         <strong>The Handsometoad Toad Ltd</strong>

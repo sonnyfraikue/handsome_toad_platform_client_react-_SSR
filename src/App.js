@@ -1,10 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-
+import "./assets/css/paper-dashboard.min.css";
 import "./App.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./assets/css/paper-dashboard.min.css";
 import Landingpage from "./components/Landingpage/Landingpage";
 import Loginc from "./components/Login/Login";
 import Register from "./components/Register/Register";

@@ -8,7 +8,7 @@ import app from "../../firebase";
 import { AuthContext } from "../../contexts/AuthContext";
 import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
-import { Helmet } from "react-helmet";
+import Meta from "../Meta/Meta";
 import { useSelector, useDispatch } from "react-redux";
 
 const Register = ({ history }) => {
@@ -57,26 +57,7 @@ const Register = ({ history }) => {
   } else {
     return (
       <div className={`${styles.Register}`}>
-        <Helmet>
-        <title>Create your account</title>
-
-        <meta
-          property="og:title"
-          name="title"
-          content="Sign up today and build your dreams."
-        />
-        <meta
-          property="og:description"
-          name="description"
-          content="Sign up today and build your dreams."
-        />
-         <meta property="og:url" content={`${locale.domain}/register`} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`${locale.domain}/images/landing-page.png`}
-        />
-      </Helmet>
+         <Meta ogtype="website" canonical={`${locale.domain}/register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}/images/register-page.png`} ogurl={`${locale.domain}/register`} ogdescription="Sign up today and build your dreams." ogtitle="Create your account."/>
         <AlertDismissable
           message={formErrors.message}
           toggler={setFormError}
@@ -84,7 +65,7 @@ const Register = ({ history }) => {
           color="warning"
         ></AlertDismissable>
         <div className="row justify-content-center">
-          <div className="col-sm-7 card m-3">
+          <div className="col-sm-7 card m-3 pt-4">
             <h5 className="card-text">Create your account</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="row mb-3">

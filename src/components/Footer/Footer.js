@@ -38,13 +38,13 @@ class Footer extends React.Component {
                     <Link className="nav-link" to="/about">About Us</Link>
                 </li> */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact">Contact</Link>
+                  <Link className="nav-link" title="contact" to="/contact">Contact</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/privacy">Privacy Policy</Link>
+                  <Link className="nav-link" title="privacy" to="/privacy">Privacy Policy</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/terms">Terms &#x00026; Conditions</Link>
+                  <Link className="nav-link" title="terms" to="/terms">Terms &#x00026; Conditions</Link>
                 </li>
               </ul>
             </nav>

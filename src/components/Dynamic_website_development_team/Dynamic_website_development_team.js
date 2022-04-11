@@ -4,6 +4,7 @@ import styles from "./Dynamic_website_development_team.module.scss";
 import Pricing from "../Pricing/Pricing";
 import { Helmet } from "react-helmet";
 import { useSelector } from "react-redux";
+import Meta from "../Meta/Meta";
 
 const Dynamic_website_development_team = () => {
   const locale = useSelector((state) => state.locale);
@@ -13,26 +14,7 @@ const Dynamic_website_development_team = () => {
       "container-fluid " + styles.Dynamic_website_development_team
     }
   >
-    <Helmet>
-        <title>Static or dynamic website and development team</title>
-
-        <meta
-          property="og:title"
-          name="title"
-          content="Static/dynamic website and development team"
-        />
-        <meta
-          property="og:description"
-          name="description"
-          content="Static/dynamic website and development team"
-        />
-        <meta property="og:url" content={`${locale.domain}/Dynamic%20website%20+%20development%20team`} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`${locale.domain}/images/landing-page.png`}
-        />
-      </Helmet>
+    <Meta ogtype="website" canonical={`${locale.domain}/Dynamic%20website%20+%20development%20team`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}/images/dynamic_website_development_team-page.png`} ogurl={`${locale.domain}/Dynamic%20website%20+%20development%20team`} ogdescription="Collaborate with our designers and your Account Manager to create your very own website design and bespoke functionality" ogtitle="Static or dynamic website and development team."/>
     <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 className={styles['display-4']+" display-4"}>STATIC/DYNAMIC WEBSITE + DEVELOPMENT TEAM</h1>
       <div className="row">
@@ -41,7 +23,8 @@ const Dynamic_website_development_team = () => {
             width="350"
             src="/images/BP-4-Software-development-1024x511.jpeg"
             className="rounded img-thumbnail"
-            alt="template_two_ladies.png"
+            alt="person working on laptop"
+            title="person working on laptop"
           />
         </div>
         <div className="col-md">

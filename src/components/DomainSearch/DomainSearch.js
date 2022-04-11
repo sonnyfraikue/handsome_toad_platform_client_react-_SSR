@@ -207,7 +207,7 @@ const DomainSearch = (props, ...rest) => {
   });
 
   return (
-    <div className={styles.DomainSearch}>
+    <div className={`${styles.DomainSearch}`}>
       <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
         {props.domainTitle && (
           <h5 className="font-weight-bold">{props.domainTitle}</h5>
@@ -215,7 +215,7 @@ const DomainSearch = (props, ...rest) => {
         {props.domainAdvert && <h2 className="mb-0">{props.domainAdvert}</h2>}
         {props.domainLead && <p className="lead">{props.domainLead}</p>}
 
-        <div className={styles.wrapper + " input-group mb-3"}>
+        <div className={styles.wrapper + " row input-group mb-3"}>
           <div className={`pl-0 col-auto pr-0`}>
             <label className="visually-hidden" htmlFor="search">
               Domain

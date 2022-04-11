@@ -5,7 +5,7 @@ import styles from "./Clientslist.module.scss";
 const Clientslist = () => (
   <section className={styles["logo-list"] + " row"}>
       <div className="col-sm pt-3">
-        <h1 className="lead">Our clients.</h1>
+        <h2 className="lead">Our clients.</h2>
       </div>
     <div className="d-flex justify-content-center align-items-center">
       {/* <div className="p-2">
@@ -15,19 +15,19 @@ const Clientslist = () => (
         />
       </div> */}
       <div className="p-2">
-        <img src="/images/sky-logo.png" alt="Sky logo" />
+        <img src="/images/sky-logo.png" alt="Sky logo" title="Sky logo" />
       </div>
       <div className="p-2">
-        <img src="/images/condenast-logo.png" alt="condenast logo" />
+        <img src="/images/condenast-logo.png" alt="condenast logo" title="condenast logo" />
       </div>
       <div className="p-2">
-        <img src="/images/clinique-logo.png" alt="clinique logo" />
+        <img src="/images/clinique-logo.png" alt="clinique logo" title="clinique logo" />
       </div>
       {/* <div className="p-2">
         <img src="/images/newsoftheworld-logo.png" alt="newsoftheworld logo" />
       </div> */}
       <div className="p-2">
-        <img src="/images/riverisland-logo.png" alt="riverisland logo" />
+        <img src="/images/riverisland-logo.png" alt="riverisland logo" title="riverisland logo" />
       </div>
       {/* <div className="p-2">
         <img
@@ -36,34 +36,34 @@ const Clientslist = () => (
         />
       </div> */}
       <div className="p-2">
-        <img src="/images/apple-logo.png" alt="apple logo" />
+        <img src="/images/apple-logo.png" alt="apple logo" title="apple logo" />
       </div>
       <div className="p-2">
-        <img src="/images/tfgm-logo.png" alt="tfgm logo" />
+        <img src="/images/tfgm-logo.png" alt="tfgm logo" title="tfgm logo" />
       </div>
       <div className="p-2">
-        <img src="/images/tatler-logo.png" alt="tatler logo" />
+        <img src="/images/tatler-logo.png" alt="tatler logo" title="tatler logo" />
       </div>
       {/* <div className="p-2">
         <img src="/images/movingbrands-logo.png" alt="movingbrands logo" />
       </div> */}
       <div className="p-2">
-        <img src="/images/es-logo.png" alt="es logo" />
+        <img src="/images/es-logo.png" alt="es logo" title="es logo" />
       </div>
       <div className="p-2">
-        <img src="/images/savills-logo.png" alt="savills logo" />
+        <img src="/images/savills-logo.png" alt="savills logo" title="savills logo" />
       </div>
       <div className="p-2">
-        <img src="/images/txtnation-logo.png" alt="txtnation logo" />
+        <img src="/images/txtnation-logo.png" alt="txtnation logo" title="txtnation logo" />
       </div>
       <div className="p-2">
-        <img src="/images/gq-logo.png" alt="gq logo" />
+        <img src="/images/gq-logo.png" alt="gq logo" title="gq logo" />
       </div>
     </div>
 
 
     <div className="col-sm mt-3">
-        <h1 className="lead">Our partners.</h1>
+        <h2 className="lead">Our partners.</h2>
       </div>
 
     <div className="row">
@@ -73,6 +73,7 @@ const Clientslist = () => (
             src="/images/bluehost-logo.png"
             className="img-fluid"
             alt="Bluehost logo"
+            title="Bluehost logo"
           />
         </a>
       </div>
@@ -82,6 +83,7 @@ const Clientslist = () => (
             src="/images/hostgator-logo.png"
             className="img-fluid"
             alt="Hostgator logo"
+            title="Hostgator logo"
           />
         </a>
       </div>
@@ -91,6 +93,7 @@ const Clientslist = () => (
             src="/images/greengeeks-logo.png"
             className="img-fluid"
             alt="Green Geeks logo"
+            title="Green Geeks logo"
           />
         </a>
       </div>
@@ -100,6 +103,7 @@ const Clientslist = () => (
             src="/images/wordpress-logo.png"
             className="img-fluid"
             alt="WordPress logo"
+            title="WordPress logo"
           />
         </a>
       </div>
@@ -109,6 +113,7 @@ const Clientslist = () => (
             src="/images/dreamhost-logo.png"
             className="img-fluid"
             alt="DreamHost logo"
+            title="DreamHost logo"
           />
         </a>
       </div>
@@ -118,6 +123,7 @@ const Clientslist = () => (
             src="/images/hostinger-logo.png"
             className="img-fluid"
             alt="Hostinger logo"
+            title="Hostinger logo"
           />
         </a>
       </div>

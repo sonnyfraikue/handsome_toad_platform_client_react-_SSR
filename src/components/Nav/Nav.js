@@ -209,11 +209,11 @@ const Nav = ({ history }) => {
         className={"pt-2 navbar navbar-expand-lg navbar-light " + styles["Nav"]}
       >
         <div className="container-fluid">
-          <Link to="/" onClick={() => setTogglerState({ isVisible: false })}>
-            <img src={logo} alt="" width="120" />
+          <Link title="Home" to="/" onClick={() => setTogglerState({ isVisible: false })}>
+            <img src={logo} alt="handsometoad logo" width="120" title="handsometoad logo" />
           </Link>
           <button
-            className="navbar-toggler"
+            className={`${styles['navbar-toggler']} navbar-toggler`}
             data-bs-toggle="collapse"
             type="button"
             data-toggle="collapse"
@@ -261,6 +261,7 @@ const Nav = ({ history }) => {
                     <a
                       className={styles["dropdown-item"] + ` dropdown-item ${styles["nav-link"]}`}
                       href="/Static website & domain"
+                      title="Static website & domain"
                     >
                       Website builder & domain
                     </a>
@@ -269,6 +270,7 @@ const Nav = ({ history }) => {
                     <a
                       className={styles["dropdown-item"] + " dropdown-item"}
                       href="/Dynamic website + development team"
+                      title="Dynamic website + development team"
                     >
                       Dynamic website + development team
                     </a>
@@ -277,6 +279,7 @@ const Nav = ({ history }) => {
                     <a
                       className={styles["dropdown-item"] + " dropdown-item"}
                       href="Website + app + development team"
+                      title="Website + app + development team"
                     >
                       Website + app + development team
                     </a>
@@ -291,6 +294,7 @@ const Nav = ({ history }) => {
                     <Link
                       className={`nav-link ${styles["nav-link"]}`}
                       to="/dashboard"
+                      title="dashboard"
                       onClick={() => setTogglerState({ isVisible: false })}
                     >
                       Dashboard
@@ -322,7 +326,7 @@ const Nav = ({ history }) => {
                 )}
                 {currentUser && process.env.NODE_ENV !== "production" ? (
                   <li className="nav-item">
-                    <Link className={`nav-link ${styles["nav-link"]}`} to="/my-account">
+                    <Link className={`nav-link ${styles["nav-link"]}`} title="my-account" to="/my-account">
                       My Account
                     </Link>
                   </li>
@@ -332,7 +336,7 @@ const Nav = ({ history }) => {
 
                 {currentUser ? (
                   <li className="nav-item">
-                    <Link className={`nav-link ${styles["nav-link"]}`} to="/domains">
+                    <Link className={`nav-link ${styles["nav-link"]}`} title="domains" to="/domains">
                       My Domains
                     </Link>
                   </li>
@@ -344,6 +348,7 @@ const Nav = ({ history }) => {
                     <Link
                       className={`nav-link ${styles["nav-link"]}`}
                       to="/register"
+                      title="register"
                       onClick={() => {
                         setTogglerState({ isVisible: false });
                       }}
@@ -359,6 +364,7 @@ const Nav = ({ history }) => {
                     <Link
                       className={`nav-link ${styles["nav-link"]}`}
                       to="/login"
+                      title="login"
                       onClick={() => {
                         setTogglerState({ isVisible: false });
                       }}

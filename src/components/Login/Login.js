@@ -5,7 +5,7 @@ import app from "../../firebase";
 import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import { useSelector, useDispatch } from "react-redux";
-import { Helmet } from "react-helmet";
+import Meta from "../Meta/Meta";
 import {config} from "../../../config";
 
 const redirectPath = process.env.NODE_ENV == 'development' ? '/dashboard':'/under_construction';
@@ -48,26 +48,7 @@ const Login = ({ history, ...rest }) => {
   if (!currentUser) {
     return (
       <div className="container">
-        <Helmet>
-        <title>Login securely and get work done.</title>
-
-        <meta
-          property="og:title"
-          name="title"
-          content="Login securely and get work done."
-        />
-        <meta
-          property="og:description"
-          name="description"
-          content="Login securely and get work done."
-        />
-        <meta property="og:url" content={`${locale.domain}/login`} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`${locale.domain}/images/landing-page.png`}
-        />
-      </Helmet>
+        <Meta ogtype="website" canonical={`${locale.domain}/login`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}/images/login-page.png`} ogurl={`${locale.domain}/login`} ogdescription="Login securely and get work done." ogtitle="Login securely and get work done."/>
         <AlertDismissable
           message={formErrors.message}
           toggler={setFormError}
@@ -75,7 +56,7 @@ const Login = ({ history, ...rest }) => {
           color="warning"
         ></AlertDismissable>
         <div className="row justify-content-center">
-          <div className="col-sm-7 card m-3">
+          <div className="col-sm-7 card m-3 pt-4">
             <h5 className="card-text">Sign in</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="row mb-3">

@@ -3,31 +3,13 @@ import PropTypes from 'prop-types';
 import styles from './Privacy.module.scss';
 import { Helmet } from "react-helmet";
 import { useSelector } from "react-redux";
+import Meta from '../Meta/Meta';
 
 const Privacy = () => {
   const locale = useSelector((state) => state.locale);
   return (
-  <div className="container card">
-          <Helmet>
-        <title>Privacy Policy.</title>
-
-        <meta
-          property="og:title"
-          name="title"
-          content="Privacy Policy."
-        />
-        <meta
-          property="og:description"
-          name="description"
-          content="Privacy Policy"
-        />
-         <meta property="og:url" content={`${locale.domain}/privacy`} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`${locale.domain}/images/landing-page.png`}
-        />
-      </Helmet>
+  <div className="container card pt-4">
+    <Meta ogtype="website" canonical={`${locale.domain}/privacy`} keywords="software development, site-builder, easy-to-use" ogimage={`${locale.domain}/images/privacy-page.png`} ogurl={`${locale.domain}/privacy`} ogdescription="Privacy Policy for The handsome toad ltd" ogtitle="Privacy Policy."/>
     
     <h1 className="lead">Privacy Policy for The handsome toad ltd</h1>
 

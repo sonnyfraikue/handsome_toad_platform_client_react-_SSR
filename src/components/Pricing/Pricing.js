@@ -16,12 +16,12 @@ const Pricing = (props) => {
                 <h4 className="my-0 font-weight-normal">Free</h4>
               </div>
               <div className="card-body d-flex flex-column">
-                <h1 className="card-title pricing-card-title">
+                <h2 className="card-title pricing-card-title">
                   {currencyFormatter.format(0, {
                     code: locale.currency,
                   })}
                   <small className="text-muted">/ mo</small>
-                </h1>
+                </h2>
                 <ul className="list-unstyled mt-3 mb-4">
                   <li>Page builder GUI</li>
                   <li>500 MB of storage</li>
@@ -30,6 +30,7 @@ const Pricing = (props) => {
                 </ul>
                 <a
                   href="register/BronzePlan/Free"
+                  title="register BronzePlan Free"
                   className={`${styles['btn-outline-primary']} mt-auto btn btn-lg btn-block btn-outline-primary`}
                 >
                   Sign up for free
@@ -42,11 +43,11 @@ const Pricing = (props) => {
                 <h4 className="my-0 font-weight-normal">Enterprise</h4>
               </div>
               <div className="card-body d-flex flex-column">
-                <h1 className="card-title pricing-card-title">
+                <h2 className="card-title pricing-card-title">
                 {currencyFormatter.format(70, {
                     code: locale.currency,
                   })} <small className="text-muted">/ mo</small>
-                </h1>
+                </h2>
                 <ul className="list-unstyled mt-3 mb-4">
                   <li>Page builder GUI</li>
                   <li>Domain services</li>
@@ -57,6 +58,7 @@ const Pricing = (props) => {
                 </ul>
                 <a
                   href="register/BronzePlan/Enterprise"
+                  title="register BronzePlan Enterprise"
                   className={`${styles['btn-primary']} mt-auto btn btn-lg btn-block btn-primary`}
                 >
                   Get started
@@ -73,11 +75,11 @@ const Pricing = (props) => {
                 <h4 className="my-0 font-weight-normal">Enterprise</h4>
               </div>
               <div className="card-body d-flex flex-column">
-                <h1 className="card-title pricing-card-title">
+                <h2 className="card-title pricing-card-title">
                 {currencyFormatter.format(1110, {
                     code: locale.currency,
                   })}* <small className="text-muted">/ mo</small>
-                </h1>
+                </h2>
                 <ul className="list-unstyled mt-3 mb-4">
                   {/* <li>Page builder GUI</li> */}
                   <li>Domain services</li>
@@ -88,7 +90,8 @@ const Pricing = (props) => {
                   <li>Help center access</li>
                 </ul>
                 <a
-                  href="register/GoldPlan/Enterprise"
+                  href="register/Goldplan/Enterprise"
+                  title="register Goldplan Enterprise"
                   className={`${styles['btn-primary']} mt-auto btn btn-lg btn-block btn-primary`}
                 >
                   Get started
@@ -106,11 +109,11 @@ const Pricing = (props) => {
               </div>
               <div className="card-body d-flex flex-column">
                 <small>Starts from</small>
-                <h1 className="card-title pricing-card-title">
+                <h2 className="card-title pricing-card-title">
                 {currencyFormatter.format(2735, {
                     code: locale.currency,
                   })}* <small className="text-muted">/ mo</small>
-                </h1>
+                </h2>
                 <ul className="list-unstyled mt-3 mb-4">
                   <li>Domain services</li>
                   <li>Unlimited users included</li>
@@ -122,6 +125,7 @@ const Pricing = (props) => {
                 </ul>
                 <a
                   href="contact"
+                  title="contact"
                   className={`${styles['btn-primary']} mt-auto btn btn-lg btn-block btn-primary`}
                 >
                   Contact us

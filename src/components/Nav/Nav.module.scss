@@ -11,6 +11,11 @@
         margin-bottom: 10px;
   }
     }
+    .navbar-toggler {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+    }
     .badge {
         font-size: 13px;
         display: inline-block;
@@ -72,6 +77,14 @@
         .dropdown-menu {
             top: 85px;
             padding: 10px;
+            &::after {
+              border: none;
+              display: none;
+            }
+            &::before {
+              border: none;
+              display: none;
+            }
         }
         &:hover {
             .dropdown-menu {
