@@ -40,7 +40,7 @@ export const renderApp = (req, res) => {
   );
   const helmet = Helmet.renderStatic();
   const html = `<!doctype html>
-  <html lang="EN">
+  <html lang="EN"> 
   <head>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta charset="utf-8" />
