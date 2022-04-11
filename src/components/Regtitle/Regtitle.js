@@ -38,8 +38,8 @@ const Regtitle = ({ registerplan, registerpackage }) => {
   }
 
   return (
-    <div className={`mb-4`}>
-      <h5 className="card-text">Create your {accregisterpackage}* <span className="text-muted">{accregisterplan}</span> account</h5>
+    <div className={`mb-4 ${styles.Regtitle}`}>
+      <h1 className={`${styles['card-text']} card-text`}>Create your {accregisterpackage}* <span className="text-muted">{accregisterplan}</span> account</h1>
     </div>
   );
 };
