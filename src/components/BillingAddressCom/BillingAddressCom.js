@@ -38,12 +38,11 @@ const BillingAddressCom = ({ history, locale }) => {
         },
       };
 
-      axios({
-        method: "post",
-        url: config.RAZZLE_DNSIMPLE_GETCON_API_URL,
-        data: sendFormData,
+      axios.post(
+        config.RAZZLE_DNSIMPLE_GETCON_API_URL,
+        {data: sendFormData},
         apiConfig,
-      })
+      )
         .then(({ data }) => {
           // setLoadingObj({ loading: false });
           //start
@@ -56,12 +55,11 @@ const BillingAddressCom = ({ history, locale }) => {
             history.push('/payment')
             return;
           }
-          axios({
-            method: "post",
-            url: config.RAZZLE_DNSIMPLE_CREATECON_API_URL,
-            data: sendFormData,
+          axios.post(
+            config.RAZZLE_DNSIMPLE_CREATECON_API_URL,
+            {data: sendFormData},
             apiConfig,
-          })
+          )
             .then(({ data }) => {
               dispatch({
                 type: "add-contact",

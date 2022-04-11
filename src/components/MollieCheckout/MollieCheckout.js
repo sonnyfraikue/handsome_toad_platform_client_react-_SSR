@@ -105,12 +105,11 @@ const MollieCheckout = ({ history }) => {
       ...{ total: summary.total },
       ...{ discount_price: summary.discount_price },
     };
-    axios({
-      method: "post",
-      url: config.RAZZLE_MOLLIE_CREATE_ORDER_API_URL,
-      data: tempObj,
+    axios.post(
+      config.RAZZLE_MOLLIE_CREATE_ORDER_API_URL,
+      tempObj,
       apiConfig,
-    })
+    )
       .then(({ data }) => {
         const mergedObj = {
           ...data.data.data,

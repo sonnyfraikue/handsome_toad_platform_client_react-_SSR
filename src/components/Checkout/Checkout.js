@@ -9,7 +9,6 @@ import BillingAddress from "../BillingAddress/BillingAddress";
 const Checkout = ({ history }) => {
   const basket = useSelector((state) => state.basket.domains);
   const locale = useSelector((state) => state.locale);
-  document.title = "Secure checkout.";
 
   const priceTotal = () => {
     let price = 0;
