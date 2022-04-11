@@ -146,12 +146,11 @@ const MollieCheckout = ({ history }) => {
       premium: basketObj["premium"],
     };
 
-    axios({
-      method: "post",
-      url: config.RAZZLE_DNSIMPLE_REGDOM_API_URL,
-      data: sendRegData,
+    axios.post(
+      config.RAZZLE_DNSIMPLE_REGDOM_API_URL,
+      sendRegData,
       apiConfig,
-    })
+    )
       .then(({ data }) => {
         const mergedObj = {
           ...data.data.data,
