@@ -72,6 +72,14 @@
                 opacity: 1 !important;
             }
       }
+
+      @media (max-width: $md-screen-size) {
+        .dropdown-menu{
+            visibility: visible !important;
+            display: inline !important;
+            opacity: 1 !important;
+        }
+  }
     .nav-item {
        
         .dropdown-menu {

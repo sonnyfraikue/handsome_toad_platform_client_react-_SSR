@@ -8,9 +8,9 @@ const Pricing = (props) => {
   const locale = useSelector((state) => state.locale);
   return (
     <div className={styles.Pricing}>
-      <div className="container d-flex justify-content-around align-items-center">
+      <div className="container d-flex flex-wrap justify-content-around align-items-top">
         {parseInt(props.option) === 1 && (
-          <div className="card-deck mb-3 text-center d-flex flex-wrap">
+          <div className="card-deck mb-3 text-center d-flex flex-wrap justify-content-around align-items-top">
             <div className={`${styles.card} card mb-4 box-shadow`}>
               <div className="card-header">
                 <h4 className="my-0 font-weight-normal">Free</h4>

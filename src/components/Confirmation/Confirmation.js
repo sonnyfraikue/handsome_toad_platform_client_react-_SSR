@@ -5,10 +5,9 @@ import { useSelector } from "react-redux";
 
 const Confirmation = () => {
 const contact = useSelector((state) => state.contact);
-document.title = "Confirmation - Thanks for your custom."
 
   return(
-  <div className={styles.Confirmation}>
+  <div className={`${styles.Confirmation} container`}>
     <div className={`${styles.jumbotron} jumbotron text-center`}>
       <h1 className="display-3">Thank You!</h1>
       <p className="lead">
