@@ -105,7 +105,7 @@ const Landingpage = (props) => {
           <div className="col-md-6"></div>
         </div>
         <div className="row justify-content-center">
-          <h1 className="lead mt-3">
+          <h1 className={`${styles['packages-title']} lead mt-3`}>
             Create your <b>online presence</b>
           </h1>
         </div>

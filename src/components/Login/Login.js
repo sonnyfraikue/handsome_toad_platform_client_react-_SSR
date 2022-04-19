@@ -6,6 +6,7 @@ import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import { useSelector, useDispatch } from "react-redux";
 import Meta from "../Meta/Meta";
+import styles from "./Login.module.scss";
 import {config} from "../../../config";
 
 const redirectPath = process.env.NODE_ENV == 'development' ? '/dashboard':'/under_construction';
@@ -47,8 +48,8 @@ const Login = ({ history, ...rest }) => {
 
   if (!currentUser) {
     return (
-      <div className="container">
-        <Meta ogtype="website" canonical={`${locale.domain}login`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/login-page.png`} ogurl={`${locale.domain}login`} ogdescription="Login securely and get work done." ogtitle="Login securely and get work done."/>
+      <div className={`${styles.Login} container`}>
+        <Meta ogtype="website" canonical={`${locale.domain}login`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/login-page.png`} ogurl={`${locale.domain}login`} ogdescription="Sign-in securely and start collaborating with our designers and your Account Manager to create your very own bespoke solution." ogtitle="Sign-in securely and get work done."/>
         <AlertDismissable
           message={formErrors.message}
           toggler={setFormError}
@@ -57,7 +58,7 @@ const Login = ({ history, ...rest }) => {
         ></AlertDismissable>
         <div className="row justify-content-center">
           <div className="col-sm-7 card m-3 pt-4">
-            <h5 className="card-text">Sign in</h5>
+            <h1 className={`${styles['card-text']} card-text mb-4`}>Sign in, get work done</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="row mb-3">
                 <label

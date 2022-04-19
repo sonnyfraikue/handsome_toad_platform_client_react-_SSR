@@ -12,7 +12,7 @@ const Tile = ({productName, productTitle, productDescription, ctaUrl}) => (
 
     </div>
     <div className="Tile-footer mb-3">
-      <Link title={`register ${productName}`} to={'register/'+productName.replace(' ','')}>Continue</Link>
+      <Link className='btn btn-lg btn-primary' title={`register ${productName}`} to={'register/'+productName.replace(' ','')}>Continue</Link>
     </div>
   </div>
 </div>

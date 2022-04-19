@@ -52,6 +52,7 @@ class Footer extends React.Component {
               <div className="copyright">
                 Built with <a href="https://reactjs.org">React</a> and <a href="https://firebase.google.com/">Firebase</a>
                 <i className="fa fa-heart heart" /> by The Handsome Toad Ltd &copy; {1900 + new Date().getYear()}
+                <div className="fb-like" data-href="https://thehandsometoad.com/" data-width="50" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
               </div>
             </div>
           </Row>

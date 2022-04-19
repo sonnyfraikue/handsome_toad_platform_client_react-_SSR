@@ -10,7 +10,7 @@ const Website_app_development_team = () => {
   const locale = useSelector((state) => state.locale);
   return(
 <div className="container-fluid">
-<Meta ogtype="website" canonical={`${locale.domain}Website%20+%20app%20+%20development%20team`} keywords="software development, development team, website, ios app" ogimage={`${locale.domain}images/website_app_development_team-page.png`} ogurl={`${locale.domain}Website%20+%20app%20+%20development%20team`} ogdescription="We will build and deploy websites and native iOs and android apps to your specification." ogtitle="Website, IOS and Android apps plus dev team."/>
+<Meta ogtype="website" canonical={`${locale.domain}Website%20+%20app%20+%20development%20team`} keywords="software development, development team, website, ios app" ogimage={`${locale.domain}images/website_app_development_team-page.png`} ogurl={`${locale.domain}Website%20+%20app%20+%20development%20team`} ogdescription="We will build and deploy websites, native iOs and android apps to your specification, this is our enterprise package. Open your account today and your dedicated account manager will give you a call." ogtitle="Website, IOS and Android apps plus dev team."/>
   <div className={styles.Website_app_development_team}>
     <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 className={styles["display-4"] + " display-4"}>WEBSITE + IOS AND ANDROID APPS + DEVELOPMENT TEAM</h1>

@@ -5,16 +5,13 @@ import PropTypes from "prop-types";
 import styles from "./Register.module.scss";
 import ImageGen from "../ImageGen/ImageGen";
 import app from "../../firebase";
-import { AuthContext } from "../../contexts/AuthContext";
 import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
-import Meta from "../Meta/Meta";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Regtitle from "../Regtitle/Regtitle";
 
 const Register = ({ history }) => {
   let params = useParams()
-  const locale = useSelector((state) => state.locale);
   const { register, handleSubmit, errors, formState } = useForm({
     mode: "onChange",
   });
@@ -59,7 +56,6 @@ const Register = ({ history }) => {
   } else {
     return (
       <div className={`${styles.Register} container`}>
-         <Meta ogtype="website" canonical={`${locale.domain}register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/register-page.png`} ogurl={`${locale.domain}register`} ogdescription="Sign up today and build your dreams." ogtitle="Create your account."/>
         <AlertDismissable
           message={formErrors.message}
           toggler={setFormError}
