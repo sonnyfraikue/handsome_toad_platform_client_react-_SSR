@@ -52,7 +52,9 @@ const intialState = {
     },
   },
   order: [],
-  paymentResponse: {},
+  paymentResponse: {
+    data:{id:null}
+  },
   modal: { iframeUrl: null, content: null, show: false, title: null },
   pricedDomain: { data: {} },
   searchedDomain: {

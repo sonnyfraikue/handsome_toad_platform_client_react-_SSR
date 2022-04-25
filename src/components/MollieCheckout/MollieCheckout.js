@@ -86,7 +86,7 @@ const MollieCheckout = ({ history }) => {
 
   const sendPayment = (cardToken, sendRegData, basketObj) => {
     const domainDesc = basketObj.map((arr) => arr.domain).join();
-    const orderNumber = "1111";
+    const orderNumber = `${Date.now()}`;
     const tempObj = {
       ...sendRegData,
       ...{ card_token: cardToken.token },
@@ -94,8 +94,8 @@ const MollieCheckout = ({ history }) => {
       ...{ locale: locale.languange },
       ...{ currency: locale.currency },
       ...{ order_number: orderNumber },
-      ...{ redirect_url: `${config.RAZZLE_DOMAIN}/confirmation/${orderNumber}` },
-      ...{ webhook_url: `${config.RAZZLE_DOMAIN}/confirmation/${orderNumber}` },
+      ...{ redirect_url: `${config.RAZZLE_DOMAIN}confirmation/${orderNumber}` },
+      ...{ webhook_url: `${config.RAZZLE_DOMAIN}confirmation/${orderNumber}` },
       ...{ method: "creditcard" },
       ...{ name: domainDesc },
       ...{ quantity: basketObj.length },
@@ -123,59 +123,15 @@ const MollieCheckout = ({ history }) => {
           type: "update-payment-response",
           payload: { paymentResponse: data },
         });
-        dispatch({
-          type: "unset-cardToken",
-          payload: { cardToken: null },
-        });
-        basket.map((each, index) => regDomain(contact.id, each, index, data.data['_links'].checkout.href));
+        // dispatch({
+        //   type: "unset-cardToken",
+        //   payload: { cardToken: null },
+        // });
+        window.location.href= data.data['_links'].checkout.href;
+        // basket.map((each, index) => regDomain(contact.id, each, index, data.data['_links'].checkout.href));
       })
       .catch(function (error) {
         setFormError({ isVisible: true, message: error.message });
-      });
-  };
-
-  const regDomain = (contactId = contact.id, basketObj, count, checkoutLink) => {
-    if(!contactId) return;
-    const sendRegData = {
-      registrant_id: contactId,
-      whois_privacy: false,
-      auto_renew: false,
-      extended_attributes: null,
-      premium_price: basketObj["registration_price"],
-      domain: basketObj["domain"],
-      premium: basketObj["premium"],
-    };
-
-    axios.post(
-      config.RAZZLE_DNSIMPLE_REGDOM_API_URL,
-      sendRegData,
-      apiConfig,
-    )
-      .then(({ data }) => {
-        const mergedObj = {
-          ...data.data.data,
-          ...basketObj
-        }
-        dispatch({
-          type: "add-to-order",
-          payload: { order: mergedObj },
-        });
-        dispatch({
-          type: "empty-basket",
-          payload: {},
-        });
-        if(count === basket.length - 1){
-         window.location.href= checkoutLink
-        }
-      })
-      .catch(function (error) {
-        dispatch({
-          type: "empty-basket",
-          payload: {},
-        });
-        if(count === basket.length - 1){
-         window.location.href= checkoutLink
-        }
       });
   };
   
