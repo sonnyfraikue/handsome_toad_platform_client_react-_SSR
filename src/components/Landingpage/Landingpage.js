@@ -21,6 +21,7 @@ const Landingpage = (props) => {
         productDescription:
           "Choose your website design from a variety of templates and customise with our easy-to-use site-builder",
         ctaUrl: "/Static website & domain",
+        registerLink: "/register/BronzePlan/Free"
       },
       {
         id: 2,
@@ -29,6 +30,7 @@ const Landingpage = (props) => {
         productDescription:
           "Collaborate with our designers and your Account Manager to create your very own website design and bespoke functionality",
         ctaUrl: "/Dynamic website + development team",
+        registerLink: "/register/Goldplan/Enterprise"
       },
       {
         id: 3,
@@ -37,6 +39,7 @@ const Landingpage = (props) => {
         productDescription:
           "We will build and deploy websites and native iOs and android apps to your specification",
         ctaUrl: "/Website + app + development team",
+        registerLink: "/register/DiamondPlan/Enterprise"
       },
     ],
     serviceCards: [
@@ -127,6 +130,7 @@ const Landingpage = (props) => {
                 productTitle={productCard.productTitle}
                 productDescription={productCard.productDescription}
                 ctaUrl={productCard.ctaUrl}
+                registerLink={productCard.registerLink}
               />
             ))}
           </div>

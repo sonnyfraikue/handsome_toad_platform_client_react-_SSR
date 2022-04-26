@@ -347,8 +347,8 @@ const Nav = ({ history }) => {
                   {!currentUser ? (
                     <Link
                       className={`nav-link ${styles["nav-link"]}`}
-                      to="/register"
-                      title="register"
+                      to="/register/BronzePlan/Free"
+                      title="register BronzePlan Free"
                       onClick={() => {
                         setTogglerState({ isVisible: false });
                       }}
