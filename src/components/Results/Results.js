@@ -27,7 +27,7 @@ const Results = (props) => {
   };
 
   return (
-    <div className={styles.Results + " container card mt-3"}>
+    <div className={styles.Results + " container card pt-4"}>
       <DomainSearch
         domainTitle="Easy domain management."
         domainLead="Bulk purchases supported, just search and add."
@@ -147,15 +147,17 @@ const Results = (props) => {
                 </div>
               </li>
             ))}
-          {suggestedDomains.length !== 0 && (
+        </ol>
+        {suggestedDomains.length !== 0 && (
+        <ul className="list-group">
             <li className="list-group-item d-flex justify-content-center align-items-center">
               <a href="#top" className={`${styles["top-link"]}`}>
                 <i className="bi bi-arrow-bar-up"></i>
                 <p>Top</p>
               </a>
             </li>
+        </ul>
           )}
-        </ol>
       </div>
     </div>
   );
