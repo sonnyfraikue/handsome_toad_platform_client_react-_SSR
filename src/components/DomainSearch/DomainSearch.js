@@ -191,10 +191,8 @@ const DomainSearch = (props, ...rest) => {
 
           
           if (props.redirector) {
-            setTimeout(() => {
-              setLoadingObj({ loading: false });
+            setLoadingObj({ loading: false });
               props.redirector("results");
-            }, 1500);
           } else {
             setLoadingObj({ loading: false });
           }
