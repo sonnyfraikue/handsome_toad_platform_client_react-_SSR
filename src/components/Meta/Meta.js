@@ -23,6 +23,13 @@ const Meta = ({ogtitle,ogdescription, keywords, ogurl, ogtype, ogimage, canonica
         />
         <meta property="og:url" content={ogurl} />
         <meta property="og:type" content={ogtype} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Handsometoad_" />
+        <meta name="twitter:description" content={ogdescription} />
+        <meta name="twitter:title" content={ogtitle} />
+        <meta name="twitter:image" content={ogimage} />
+
         <link rel="canonical" href={canonical} />
       </Helmet>
   </div>
