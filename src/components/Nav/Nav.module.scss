@@ -3,12 +3,33 @@
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     margin-bottom: 0;
+    .logo {
+      margin-right: auto;
+    }
     .countrySelect {
       input{
         border: 1px solid #ddd !important;
       }
-      @media (max-width: $sm-screen-size) {
+      @media (max-width: $md-screen-size) {
         margin-bottom: 10px;
+        display: none;
+  }
+    }
+    .show {
+      .countrySelect {
+            margin-bottom: 10px;
+            display: block;
+      }
+    }
+    .basketBtn{
+      margin-right: 10px;
+      border: none;
+      font-size: 30px;
+      background-color: none;
+      line-height: 0;
+      display: none;
+      @media (max-width: $md-screen-size) {
+        display: block;
   }
     }
     .navbar-toggler {
@@ -59,26 +80,14 @@
           opacity: 0;
         }
       }
-
-    @media (max-width: $sm-screen-size) {
-            .dropdown-menu{
-                visibility: visible !important;
-                display: block !important;
-                opacity: 1 !important;
-            }
-            .navbar-collapse{
-                visibility: visible !important;
-                display: block !important;
-                opacity: 1 !important;
-            }
-      }
-
-      @media (max-width: $md-screen-size) {
+      
+      @media (max-width: $sm-screen-size) {
         .dropdown-menu{
             visibility: visible !important;
-            display: inline !important;
+            display: block !important;
             opacity: 1 !important;
         }
+        
   }
     .nav-item {
        

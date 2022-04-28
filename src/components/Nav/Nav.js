@@ -209,9 +209,18 @@ const Nav = ({ history }) => {
         className={"pt-2 navbar navbar-expand-lg navbar-light " + styles["Nav"]}
       >
         <div className="container-fluid">
-          <Link title="Home" to="/" onClick={() => setTogglerState({ isVisible: false })}>
+          <Link className={styles.logo} title="Home" to="/" onClick={() => setTogglerState({ isVisible: false })}>
             <img src={logo} alt="handsometoad logo" width="120" title="handsometoad logo" />
           </Link>
+          {basket.length > 0 &&(
+            <Link onClick={() => {
+              handleShow();
+              setTogglerState({ isVisible: false });
+            }} className={`btn btn-outline-secondary ${styles.basketBtn}`}>
+            <i class="bi bi-cart"></i>
+            {basket.length}
+            </Link>
+          )}
           <button
             className={`${styles['navbar-toggler']} navbar-toggler`}
             data-bs-toggle="collapse"
@@ -232,7 +241,7 @@ const Nav = ({ history }) => {
           <div
             className={
               toggler.isVisible
-                ? `show collapse navbar-collapse`
+                ? `${styles.show} show collapse navbar-collapse`
                 : `collapse navbar-collapse ${styles["navbar-collapse"]}`
             }
             id="navbarNavDropdown"
@@ -380,7 +389,7 @@ const Nav = ({ history }) => {
               </ul>
             </div>
           </div>
-          <div>
+          <div className={toggler.isVisible?`show ${styles.show}`:"" }>
             <ul className="nav navbar-na">
               <li className={`${styles.countrySelect} nav-item pull-right`}>
                 <CountrySelect
