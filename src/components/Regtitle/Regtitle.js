@@ -9,17 +9,17 @@ const Regtitle = ({ registerplan, registerpackage }) => {
   const locale = useSelector((state) => state.locale);
 
   let accregisterplan, accregisterpackage;
-  switch (registerplan) {
-    case "BronzePlan":
+  switch (registerplan.toLowerCase()) {
+    case "bronzeplan":
       accregisterplan = "website builder & domain";
       accregisterpackage = "free";
       break;
 
-    case "GoldPlan":
+    case "goldplan":
       accregisterplan = "dynamic website and development team";
       accregisterpackage = "free";
       break;
-    case "DiamondPlan":
+    case "diamondplan":
       accregisterplan = "website + app + development team";
       accregisterpackage = "enterprise";
       break;
@@ -29,12 +29,12 @@ const Regtitle = ({ registerplan, registerpackage }) => {
       break;
   }
 
-  switch (registerpackage) {
-    case "Enterprise":
+  switch (registerpackage.toLowerCase()) {
+    case "enterprise":
       accregisterpackage = "enterprise";
       break;
 
-      case "Free":
+      case "free":
       accregisterpackage = "free";
       break;
   
@@ -44,7 +44,7 @@ const Regtitle = ({ registerplan, registerpackage }) => {
 
   return (
     <div className={`mb-4 ${styles.Regtitle}`}>
-         <Meta ogtype="website" canonical={`${locale.domain}register/${registerplan||'BronzePlan'}`} keywords={`sign-in, software development, ${accregisterplan}, ${accregisterpackage}, handsome toad ltd`} ogimage={`${locale.domain}images/register-page.png`} ogurl={`${locale.domain}register/${registerplan}`} ogdescription={`Sign up today and build your dreams. Create your ${accregisterpackage} ${accregisterplan} account. All our packages allow you to deploy an MVP aka minimum viable product and purchase features as-you-go.`} ogtitle={`Create ${accregisterpackage} ${accregisterplan} your account.`}/>
+         <Meta ogtype="website" canonical={`${locale.domain}register/${registerplan||'BronzePlan'}`} keywords={`sign-in, software development, ${accregisterplan}, ${accregisterpackage}, handsome toad ltd`} ogimage={`${locale.domain}images/register-page.png`} ogurl={`${locale.domain}register/${registerplan}`} ogdescription={`Sign up today and build your dreams. Create your ${accregisterpackage} ${accregisterplan} account. All our packages allow you to deploy an MVP aka minimum viable product and purchase features as-you-go.`} ogtitle={`Create ${accregisterpackage} ${accregisterplan} account.`}/>
 
       <h1 className={`${styles['card-text']} card-text`}>Create your {accregisterpackage}* <span className="text-muted">{accregisterplan}</span> account</h1>
     </div>
