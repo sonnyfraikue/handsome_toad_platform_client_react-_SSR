@@ -54,7 +54,7 @@ const ForgotPassword = ({ history }) => {
 
   return (
     <div className={styles.ForgotPassword + " container"}>
-       <Meta ogtype="website" canonical={`${locale.domain}register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/forgot_password-page.png`} ogurl={`${locale.domain}forgot-password`} ogdescription="Forgot password? we can help you recover your credentials." ogtitle="Forgot password."/>
+       <Meta ogtype="website" canonical={`${locale.domain}register`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/forgot_password-page.png`} ogurl={`${locale.domain}forgot-password`} ogdescription="Forgot password? we can help you recover your credentials, just provide the email you registered with and we will help recover your account." ogtitle="Forgot password."/>
       <AlertDismissable
         message={formErrors.message}
         toggler={setFormError}
