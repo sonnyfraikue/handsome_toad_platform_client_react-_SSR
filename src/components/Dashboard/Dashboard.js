@@ -5,8 +5,7 @@ import SiteTemplates from "../SiteTemplates/SiteTemplates";
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-const Dashboard = (props) => {
-  document.title = "Welcome to your dashboard.";
+const Dashboard = ({history}) => {
   const dispatch = useDispatch();
   const features = useSelector((state) => state.currentFeatures);
   const modal = useSelector((state) => state.modal);

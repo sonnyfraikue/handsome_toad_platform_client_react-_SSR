@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import "./assets/css/paper-dashboard.min.css";
 import "./App.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -33,12 +33,15 @@ import Delegation from "./components/Delegation/Delegation";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 
-const App = () => (
+const App = () => {
+const history = useHistory();
+  
+  return(
   <div className="App">
-    <Nav />
+    <Nav history={history} />
     <Switch>
       <Route exact path="/" component={Landingpage} />
-      <Route exact path="/login" component={Loginc} />
+      <Route  history={history} path="/login" component={Loginc} />
       <Route path="/register/:registerplan?/:registerpackage?" component={Register} />
       <Route exact path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
@@ -66,7 +69,7 @@ const App = () => (
       <Route path="/confirmation" component={Confirmation} />
       <Route path="/payment" component={Payment} />
       <PrivateRoute exact path="/domains">
-        <Domains />
+        <Domains history={history} />
       </PrivateRoute>
       <PrivateRoute exact path="/domains/:domain_id">
         <Domain />
@@ -84,6 +87,6 @@ const App = () => (
     </Switch>
     <Footer />
   </div>
-);
+)};
 
 export default App;

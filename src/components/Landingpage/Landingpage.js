@@ -74,8 +74,8 @@ const Landingpage = (props) => {
     ],
     domainSearch: {
       id: 10,
-      domainAdvert: `Buy or transfer a domain with us for 10% off development costs.`,
-      domainTitle: "New customers deal!",
+      domainAdvert: `Buy or transfer a domain with us for peace of mind.`,
+      domainTitle: "Domain registration done simply.",
       domainFormPlaceholder: "newsite.com",
     },
   };
@@ -96,7 +96,7 @@ const Landingpage = (props) => {
         <div className={"row " + styles.Searchdomain}>
           <div className={"col-md-6 " + styles["mt-7"]}>
             <DomainSearch
-              domainLead="Available for the first month only*."
+              domainLead="Choose a name to get started, e.g example.com"
               key={state.domainSearch.id}
               domainAdvert={state.domainSearch.domainAdvert}
               domainFormPlaceholder={state.domainSearch.domainFormPlaceholder}

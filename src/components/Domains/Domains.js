@@ -5,7 +5,7 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import {config} from "../../../config";
 
-const Domains = () => {
+const Domains = ({history}) => {
   const currentUser = useSelector((state) => state.currentUser);
   const contact = useSelector((state) => state.contact);
   const purchasedDomains = useSelector((state) => state.purchasedDomains);
@@ -68,7 +68,7 @@ const Domains = () => {
   }, []);
 
   return (
-    <div className={"container mt-3 " + styles.Domains}>
+    <div className={"container p-3 " + styles.Domains}>
       <h1 className="lead">My domains</h1>
       <div className="list-group">
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

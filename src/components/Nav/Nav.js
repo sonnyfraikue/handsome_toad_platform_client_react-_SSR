@@ -217,7 +217,7 @@ const Nav = ({ history }) => {
               handleShow();
               setTogglerState({ isVisible: false });
             }} className={`btn btn-outline-secondary ${styles.basketBtn}`}>
-            <i class="bi bi-cart"></i>
+            <i className="bi bi-cart"></i>
             {basket.length}
             </Link>
           )}

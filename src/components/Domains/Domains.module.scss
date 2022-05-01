@@ -1,1 +1,7 @@
-.Domains {}
+@import "../../assets/scss/paper-dashboard/variables";
+.Domains {
+    background-color: #fff;
+    @media (max-width: $sm-screen-size) {
+        min-height: 500px;
+      }
+}
