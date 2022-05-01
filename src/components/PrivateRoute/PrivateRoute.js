@@ -6,12 +6,12 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 import { useSelector } from "react-redux";
 
 
-const PrivateRoute = ({ children, ...rest }) => {
+const PrivateRoute = ({ Component, ...rest }) => {
   const currentUser = useSelector((state) => state.currentUser);
 
   return (
     <Route {...rest} render={(props) => {
-      return !!currentUser ? children : <Redirect to={{pathname:'/login', state: {from:props.location}}} />;
+      return !!currentUser ? <Component {...props} /> : <Redirect to={{pathname:'/login', state: {from:props.location}}} />;
     }} />
 
   )

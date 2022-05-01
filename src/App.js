@@ -68,21 +68,11 @@ const history = useHistory();
       <Route path="/checkout" component={Checkout} />
       <Route path="/confirmation" component={Confirmation} />
       <Route path="/payment" component={Payment} />
-      <PrivateRoute exact path="/domains">
-        <Domains history={history} />
-      </PrivateRoute>
-      <PrivateRoute exact path="/domains/:domain_id">
-        <Domain />
-      </PrivateRoute>
-      <PrivateRoute exact path="/domains/:domain_id/edit-delegation">
-        <Delegation />
-      </PrivateRoute>
-      <PrivateRoute path="/dashboard">
-        <Dashboard />
-      </PrivateRoute>
-      <PrivateRoute path="/my-account">
-        <MyAccount />
-      </PrivateRoute>
+      <PrivateRoute exact path="/domains" component={Domains}/>
+      <PrivateRoute path="/domains/:domain_id" component={Domain}/>
+      <PrivateRoute path="/domains/:domain_id/edit-delegation" component={Delegation} />
+      <PrivateRoute path="/dashboard" component={Dashboard}/>
+      <PrivateRoute path="/my-account" component={MyAccount} />
       <Route component={NotFound} />
     </Switch>
     <Footer />
