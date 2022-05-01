@@ -61,7 +61,7 @@ const Domain = (props, ...rest) => {
         <div className="p-2 w-50 bd-highlight">
           <ul className="nav flex-column">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link active " aria-current="page" href="#">
                 Domain
               </a>
             </li>
