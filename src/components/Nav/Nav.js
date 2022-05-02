@@ -11,7 +11,7 @@ import Basket from "../Basket/Basket";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
 import countriesJson from "../../countries.json";
 import countries from "@doubco/countries";
-import {config} from "../../../config";
+import { config } from "../../../config";
 
 const Nav = ({ history }) => {
   const currentUser = useSelector((state) => state.currentUser);
@@ -50,12 +50,10 @@ const Nav = ({ history }) => {
     };
     axios
       .get(
-        config.RAZZLE_ABSTRACTAPI_VATRATE_API_URL +
-          `?country_code=${capCC}`,
+        config.RAZZLE_ABSTRACTAPI_VATRATE_API_URL + `?country_code=${capCC}`,
         apiConfig
       )
       .then((data) => {
-        console.log(data)
         let localeObj = countries.data[capCC];
         let rateObj = data.data.err
           ? []
@@ -209,20 +207,33 @@ const Nav = ({ history }) => {
         className={"pt-2 navbar navbar-expand-lg navbar-light " + styles["Nav"]}
       >
         <div className="container-fluid">
-          <Link className={styles.logo} title="Home" to="/" onClick={() => setTogglerState({ isVisible: false })}>
-            <img src={logo} alt="handsometoad logo" width="120" title="handsometoad logo" />
+          <Link
+            className={styles.logo}
+            title="Home"
+            to="/"
+            onClick={() => setTogglerState({ isVisible: false })}
+          >
+            <img
+              src={logo}
+              alt="handsometoad logo"
+              width="120"
+              title="handsometoad logo"
+            />
           </Link>
-          {basket.length > 0 &&(
-            <Link onClick={() => {
-              handleShow();
-              setTogglerState({ isVisible: false });
-            }} className={`btn btn-outline-secondary ${styles.basketBtn}`}>
-            <i className="bi bi-cart"></i>
-            {basket.length}
+          {basket.length > 0 && (
+            <Link
+              onClick={() => {
+                handleShow();
+                setTogglerState({ isVisible: false });
+              }}
+              className={`btn btn-outline-secondary ${styles.basketBtn}`}
+            >
+              <i className="bi bi-cart"></i>
+              {basket.length}
             </Link>
           )}
           <button
-            className={`${styles['navbar-toggler']} navbar-toggler`}
+            className={`${styles["navbar-toggler"]} navbar-toggler`}
             data-bs-toggle="collapse"
             type="button"
             data-toggle="collapse"
@@ -268,7 +279,10 @@ const Nav = ({ history }) => {
                 >
                   <li>
                     <a
-                      className={styles["dropdown-item"] + ` dropdown-item ${styles["nav-link"]}`}
+                      className={
+                        styles["dropdown-item"] +
+                        ` dropdown-item ${styles["nav-link"]}`
+                      }
                       href="/Static website & domain"
                       title="Static website & domain"
                     >
@@ -335,7 +349,11 @@ const Nav = ({ history }) => {
                 )}
                 {currentUser && process.env.NODE_ENV !== "production" ? (
                   <li className="nav-item">
-                    <Link className={`nav-link ${styles["nav-link"]}`} title="my-account" to="/my-account">
+                    <Link
+                      className={`nav-link ${styles["nav-link"]}`}
+                      title="my-account"
+                      to="/my-account"
+                    >
                       My Account
                     </Link>
                   </li>
@@ -345,7 +363,14 @@ const Nav = ({ history }) => {
 
                 {currentUser ? (
                   <li className="nav-item">
-                    <Link className={`nav-link ${styles["nav-link"]}`} title="domains" to="/domains">
+                    <Link
+                      className={`nav-link ${styles["nav-link"]}`}
+                      title="domains"
+                      to="/domains"
+                      onClick={() => {
+                        setTogglerState({ isVisible: false });
+                      }}
+                    >
                       My Domains
                     </Link>
                   </li>
@@ -381,7 +406,11 @@ const Nav = ({ history }) => {
                       Sign in
                     </Link>
                   ) : (
-                    <a className={`nav-link ${styles["nav-link"]}`} href="#" onClick={onSubmit}>
+                    <a
+                      className={`nav-link ${styles["nav-link"]}`}
+                      href="#"
+                      onClick={onSubmit}
+                    >
                       Sign out
                     </a>
                   )}
@@ -389,7 +418,7 @@ const Nav = ({ history }) => {
               </ul>
             </div>
           </div>
-          <div className={toggler.isVisible?`show ${styles.show}`:"" }>
+          <div className={toggler.isVisible ? `show ${styles.show}` : ""}>
             <ul className="nav navbar-na">
               <li className={`${styles.countrySelect} nav-item pull-right`}>
                 <CountrySelect
