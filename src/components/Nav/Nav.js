@@ -270,6 +270,9 @@ const Nav = ({ history }) => {
                   className={"nav-link dropdown-toggle " + styles["nav-link"]}
                   id="navbarDropdownMenuLinkProducts"
                   to="#"
+                  onClick={() => {
+                    setTogglerState({ isVisible: true });
+                  }}
                 >
                   Products
                 </Link>
