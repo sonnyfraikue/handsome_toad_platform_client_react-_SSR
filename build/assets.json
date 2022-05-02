@@ -1,0 +1,102 @@
+{
+  "client": {
+    "css": [
+      "/static/css/client.e729a038.css"
+    ],
+    "js": [
+      "/static/js/client.25eaf636.js"
+    ],
+    "map": [
+      "/static/css/client.e729a038.css.map",
+      "/static/js/client.25eaf636.js.map"
+    ],
+    "chunks": [
+      0
+    ]
+  },
+  "noentry": {
+    "ico": [
+      "/favicon.ico",
+      "/images/favicon.ico"
+    ],
+    "jpeg": [
+      "/images/BP-4-Software-development-1024x511.jpeg"
+    ],
+    "png": [
+      "/images/THT_Fullcolour_Brand.png",
+      "/images/apple-logo.png",
+      "/images/bluehost-logo.png",
+      "/images/clinique-logo.png",
+      "/images/condenast-logo.png",
+      "/images/contact-page.png",
+      "/images/dreamhost-logo.png",
+      "/images/dynamic_website_development_team-page.png",
+      "/images/es-logo.png",
+      "/images/get-shit-done.png",
+      "/images/gq-logo.png",
+      "/images/greengeeks-logo.png",
+      "/images/hostgator-logo.png",
+      "/images/hostinger-logo.png",
+      "/images/hotels.png",
+      "/images/landing-page.png",
+      "/images/light-bootstrap-dashboard.png",
+      "/images/login-page.png",
+      "/images/logo192.png",
+      "/images/logo512.png",
+      "/images/material-dashboard.png",
+      "/images/movingbrands-logo.png",
+      "/images/newsoftheworld-logo.png",
+      "/images/now-ui.png",
+      "/images/paper-kit.png",
+      "/images/privacy-page.png",
+      "/images/prodirectsports-logo.png",
+      "/images/quintessentially-logo.png",
+      "/images/register-page.png",
+      "/images/riverisland-logo.png",
+      "/images/savills-logo.png",
+      "/images/shakespearesglobe-logo.png",
+      "/images/sky-logo.png",
+      "/images/social.png",
+      "/images/static_website_domain-page.png",
+      "/images/tatler-logo.png",
+      "/images/template_two_ladies.png",
+      "/images/terms-page.png",
+      "/images/tfgm-logo.png",
+      "/images/txtnation-logo.png",
+      "/images/website_app_development_team-page.png",
+      "/images/wordpress-logo.png"
+    ],
+    "svg": [
+      "/images/THT_Fullcolour_Brand.svg",
+      "/images/artist-toad-mascot.svg",
+      "/static/media/1140-2.479b6ea2.svg",
+      "/static/media/THT_fullcolour_Text.3b360e53.svg",
+      "/static/media/cement_mixer_truck_static.d5572c14.svg"
+    ],
+    "com": [
+      "/images/apple-logo.com"
+    ],
+    "txt": [
+      "/robots.txt",
+      "/static/js/client.25eaf636.js.LICENSE.txt",
+      "/zones.txt"
+    ],
+    "xml": [
+      "/sitemap.xml"
+    ],
+    "woff2": [
+      "/static/media/bootstrap-icons.1ed478a6.woff2",
+      "/static/media/nucleo-icons.5c78b4cf.woff2"
+    ],
+    "woff": [
+      "/static/media/bootstrap-icons.e4cc83dd.woff",
+      "/static/media/nucleo-icons.6836b93b.woff"
+    ],
+    "ttf": [
+      "/static/media/nucleo-icons.48ac036d.ttf"
+    ],
+    "eot": [
+      "/static/media/nucleo-icons.f32ed5ad.eot"
+    ]
+  }
+}
