@@ -4,4 +4,9 @@
     @media (max-width: $sm-screen-size) {
         min-height: 500px;
       }
+      .jcb{
+        @media (max-width: $sm-screen-size) {
+          flex-direction: column;
+        }
+      }
 }

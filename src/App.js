@@ -32,10 +32,12 @@ import Domain from "./components/Domain/Domain";
 import Delegation from "./components/Delegation/Delegation";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import { useSelector } from "react-redux";
 
 const App = () => {
 const history = useHistory();
-  
+const currentUser = useSelector((state) => state.currentUser);
+
   return(
   <div className="App">
     <Nav history={history} />
@@ -68,11 +70,11 @@ const history = useHistory();
       <Route path="/checkout" component={Checkout} />
       <Route path="/confirmation" component={Confirmation} />
       <Route path="/payment" component={Payment} />
-      <PrivateRoute exact path="/domains" component={Domains}/>
-      <PrivateRoute path="/domains/:domain_id" component={Domain}/>
-      <PrivateRoute path="/domains/:domain_id/edit-delegation" component={Delegation} />
-      <PrivateRoute path="/dashboard" component={Dashboard}/>
-      <PrivateRoute path="/my-account" component={MyAccount} />
+      <PrivateRoute currentUser={currentUser} exact path="/domains" component={Domains}/>
+      <PrivateRoute currentUser={currentUser} path="/domains/:domain_id" component={Domain}/>
+      <PrivateRoute currentUser={currentUser} path="/domains/:domain_id/edit-delegation" component={Delegation} />
+      <PrivateRoute currentUser={currentUser} path="/dashboard" component={Dashboard}/>
+      <PrivateRoute currentUser={currentUser} path="/my-account" component={MyAccount} />
       <Route component={NotFound} />
     </Switch>
     <Footer />

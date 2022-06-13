@@ -30,7 +30,7 @@ const Meta = ({ogtitle,ogdescription, keywords, ogurl, ogtype, ogimage, canonica
         <meta name="twitter:title" content={ogtitle} />
         <meta name="twitter:image" content={ogimage} />
 
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={ogurl} />
       </Helmet>
   </div>
 );

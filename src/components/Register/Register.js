@@ -152,7 +152,7 @@ const Register = ({ history }) => {
                   htmlFor="inputPassword3"
                   className="col-sm-2 col-form-label"
                 >
-                  Captcha
+                  Captcha (type the following numbers)
                 </label>
                 <div className="col-sm-4">
                   <input
@@ -184,18 +184,22 @@ const Register = ({ history }) => {
                 </div>
               </div>
               <div className="row mb-3">
-                <div className="col">
-                  <button
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                <button
                     disabled={!isValid}
                     type="submit"
                     className={`${styles['sign-up']} btn btn-primary`}
                   >
                     Sign up
                   </button>
-                <span className={`${styles['login-link']} ml-4`}>Already have an account?</span>
+                </div>
+                 <div>
+                 <span className={`${styles['login-link']} ml-4`}>Already have an account?</span>
                   <Link className="link-primary ml-2" to="/login">
                     sign in.
                   </Link>
+                 </div>
                 </div>
               </div>
             </form>

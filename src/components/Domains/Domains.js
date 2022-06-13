@@ -5,6 +5,7 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import {config} from "../../../config";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 
 const Domains = ({history}) => {
@@ -71,22 +72,23 @@ const Domains = ({history}) => {
 
   return (
     <div className={"container p-3 " + styles.Domains}>
-      <h1 className="lead">My domains</h1>
+      <h1 className="lead">Select a domain to manage</h1>
       <div className="list-group">
-        <Link
+        <Button
           className="list-group-item list-group-item-action active"
           aria-current="true"
+          
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">Manage domains</h5>
           </div>
-        </Link>
+        </Button>
         {purchasedDomains.map((each,index) => {
           return (
             <Link to={`/domains/${each.id}`} className="list-group-item list-group-item-action" key={index}>
-              <div className="d-flex w-100 justify-content-between">
+              <div className={`d-flex w-100 justify-content-between ${styles.jcb}`}>
                 <h5 className="mb-1">{each.name}</h5>
-                <small className="text-muted">Created on {each.created_at}</small>
+                <small className={`text-muted`}>Created on {each.created_at}</small>
               </div>
               <p className="mb-1">Expires on {each.expires_on}.</p>
               <small className="text-muted">{each.auto_renew===true?"Auto-renew is ON":"Auto-renew is ON"}</small>

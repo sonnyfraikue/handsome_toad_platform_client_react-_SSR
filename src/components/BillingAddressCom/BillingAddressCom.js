@@ -37,7 +37,7 @@ const BillingAddressCom = ({ history, locale }) => {
           "Content-Type": "application/json",
         },
       };
-
+      
       axios.post(
         config.RAZZLE_DNSIMPLE_GETCON_API_URL,
         {data: sendFormData},
@@ -376,18 +376,22 @@ const BillingAddressCom = ({ history, locale }) => {
         </label>
       </div>
       <hr className="mb-4" />
-      {!isSubmitted&&(<button
+      <div class="d-grid gap-2">
+      {<button
             className="btn btn-primary btn-lg btn-block" type="submit" disabled={!isValid}
           >
-            {isSubmitting && (
+            {!isSubmitted && (
+              <span>Continue</span>
+            )}
+            {isSubmitted && (
               <span
                 className="spinner-border spinner-border-lg"
                 role="status"
                 aria-hidden="true"
               ></span>
             )}
-              Continue
-          </button>)}
+          </button>}
+          </div>
     </div>
  </form> 
  </div>

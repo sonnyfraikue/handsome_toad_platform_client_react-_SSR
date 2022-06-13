@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./MollieCheckout.module.scss";
 import { useSelector, useDispatch } from "react-redux";
+import currencyFormatter from "currency-formatter";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import AlertDismissable from "../Alert/Alert";
@@ -23,14 +24,19 @@ var options = {
 
 const MollieCheckout = ({ history }) => {
   const [mollie, setMollie] = useState();
+  const [submitted, setSubmitted] = useState(false);
   const dispatch = useDispatch();
   const contact = useSelector((state) => state.contact);
   const basket = useSelector((state) => state.basket.domains);
   const summary = useSelector((state) => state.basket.summary);
+
   const locale = useSelector((state) => state.locale);
   const [formErrors, setFormError] = useState({
     isVisible: false,
     message: "An error occured!",
+  });
+    const { register, handleSubmit, errors, formState } = useForm({
+    mode: "onChange",
   });
   const apiConfig = {
     headers: {
@@ -69,7 +75,7 @@ const MollieCheckout = ({ history }) => {
 
       document.forms[0].addEventListener("submit", (e) => {
         e.preventDefault();
-
+        setSubmitted(true)
         mollie.createToken().then(function (result) {
           dispatch({
             type: "set-cardToken",
@@ -170,11 +176,22 @@ const MollieCheckout = ({ history }) => {
             <div id="verification-code-error"></div>
           </div>
         </div>
-        <div className="row">
+        <div className="d-grid gap-2">
           <button className="btn btn-primary btn-lg btn-block ml-3 mr-3 mt-4 mb-4" type="submit">
-            Pay
+            {!submitted && (
+              <span>Pay {currencyFormatter.format(summary.total, {
+                code: locale.currency,
+              })}   </span>
+            )}
+            {submitted && (
+              <span
+                className="spinner-border spinner-border-lg"
+                role="status"
+                aria-hidden="true"
+              ></span>
+            )}
           </button>
-        </div>
+          </div>
       </form>
     </div>
   );

@@ -36,6 +36,7 @@ const Login = ({ history, ...rest }) => {
             type: "login",
             payload: userCredential.user,
           });
+          localStorage.setItem("isAuthenticated", "true");
           
           return <Redirect to={redirectPath} />
         })
@@ -46,7 +47,7 @@ const Login = ({ history, ...rest }) => {
     [history]
   );
 
-  if (!currentUser) {
+  if (currentUser === null) {
     return (
       <div className={`${styles.Login} container`}>
         <Meta ogtype="website" canonical={`${locale.domain}login`} keywords="sign-in, software development, terms and conditions, handsome toad ltd" ogimage={`${locale.domain}images/login-page.png`} ogurl={`${locale.domain}login`} ogdescription="Sign-in securely and start collaborating with our designers and your Account Manager to create your very own bespoke solution." ogtitle="Sign-in securely and get work done."/>
@@ -120,8 +121,9 @@ const Login = ({ history, ...rest }) => {
                   </div>
                 </div>
               </div>
-              <div className="row mb-3">
-                <div className="col-sm-6">
+              <div className="row">
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                  <div>
                   <button
                     disabled={!isValid}
                     type="submit"
@@ -129,9 +131,12 @@ const Login = ({ history, ...rest }) => {
                   >
                     Sign in
                   </button>
-                  <Link className="link-primary ml-4" to="/forgot-password">
+                  </div>
+                 <div>
+                 <Link className="link-primary ml-4" to="/forgot-password">
                     Forgot your password?
                   </Link>
+                 </div>
                 </div>
               </div>
             </form>

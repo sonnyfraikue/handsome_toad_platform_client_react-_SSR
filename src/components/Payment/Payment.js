@@ -5,7 +5,7 @@ import CreditCard from '../CreditCard/CreditCard';
 
 const Payment = () => (
   <div className="container card mt-3">
-    <p className="lead mt-3 mb-0 pb-0">Payment</p>
+    <p className="lead mt-3 mb-0 pb-0">Payment <i className="bi bi-credit-card"></i></p>
     <p>Complete your purchase by providing your payment details.</p>
     <CreditCard />
   </div>
