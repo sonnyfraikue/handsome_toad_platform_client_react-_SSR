@@ -65,6 +65,18 @@ const Pricing = (props) => {
                 </a>
               </div>
             </div>
+
+
+            <div className={`${styles.card} card mb-4 box-shadow align-items-center`}>
+            <img
+            width="300"
+            src="/images/template_two_ladies.png"
+            className="rounded img-thumbnail"
+            alt="website builder template of two ladies"
+            title="website builder template of two ladies"
+          />
+            </div>
+            
           </div>
         )}
 
