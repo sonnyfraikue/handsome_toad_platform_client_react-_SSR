@@ -5,6 +5,7 @@ import DomainSearch from "../DomainSearch/DomainSearch";
 import { useSelector, useDispatch } from "react-redux";
 import currencyFormatter from "currency-formatter";
 import { useLocation } from "react-router-dom";
+import Meta from "../Meta/Meta";
 
 const Results = (props) => {
   const searchedDomain = useSelector((state) => state.searchedDomain);
@@ -28,6 +29,7 @@ const Results = (props) => {
 
   return (
     <div className={styles.Results + " container card pt-4"}>
+      <Meta ogtype="website" canonical={`${locale.domain}login`} keywords="domain names, premium domains, standard domains, auto-suggested domain names" ogimage={`${locale.domain}images/login-page.png`} ogurl={`${locale.domain}login`} ogdescription="We are great at suggesting similar availabale domain names if your chosen domain is unavailable." ogtitle="Search for your prefered domain or select from our suggested standard and premium domains."/>
       <DomainSearch
         domainTitle="Easy domain management."
         domainLead="Bulk purchases supported, just search and add."

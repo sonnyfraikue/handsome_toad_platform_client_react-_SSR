@@ -22,6 +22,10 @@
             padding: 20px;
             width: 50%;
             height: 80px;
+            @media (max-width: $sm-screen-size) {
+                width: 100%;
+                height: auto;
+            }
             border: 1px solid $primary-color;
             background-color: $white-color;
         }

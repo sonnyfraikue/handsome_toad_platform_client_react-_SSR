@@ -28,5 +28,6 @@ export const config = {
     RAZZLE_FIREBASE_APP_ID: process.env.NODE_ENV === "development" ? process.env.RAZZLE_FIREBASE_APP_ID_LOCAL :process.env.RAZZLE_FIREBASE_APP_ID,
     RAZZLE_GODADDY_OTE_API_KEY: process.env.NODE_ENV === "development" ? process.env.RAZZLE_GODADDY_OTE_API_KEY_LOCAL :process.env.RAZZLE_GODADDY_OTE_API_KEY,
     RAZZLE_GODADDY_OTE_API_SECRET: process.env.NODE_ENV === "development" ? process.env.RAZZLE_GODADDY_OTE_API_SECRE_LOCAL :process.env.RAZZLE_GODADDY_OTE_API_SECRET,
-    RAZZLE_MOLLIE_CHECK_ORDER_API_URL: process.env.NODE_ENV === "development" ? process.env.RAZZLE_MOLLIE_CHECK_ORDER_API_URL_LOCAL :process.env.RAZZLE_MOLLIE_CHECK_ORDER_API_URL
+    RAZZLE_MOLLIE_CHECK_ORDER_API_URL: process.env.NODE_ENV === "development" ? process.env.RAZZLE_MOLLIE_CHECK_ORDER_API_URL_LOCAL :process.env.RAZZLE_MOLLIE_CHECK_ORDER_API_URL,
+    RAZZLE_USER_ROLES_API_URL: process.env.NODE_ENV === "development" ? process.env.RAZZLE_USER_ROLES_API_URL_LOCAL :process.env.RAZZLE_USER_ROLES_API_URL
 }

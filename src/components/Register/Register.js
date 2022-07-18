@@ -9,6 +9,8 @@ import { withRouter } from "react-router-dom";
 import AlertDismissable from "../Alert/Alert";
 import { useSelector } from "react-redux";
 import Regtitle from "../Regtitle/Regtitle";
+import {config} from "../../../config";
+import axios from "axios";
 
 const Register = ({ history }) => {
   let params = useParams()
@@ -40,7 +42,30 @@ const Register = ({ history }) => {
           await app
             .auth()
             .createUserWithEmailAndPassword(data.email, data.password);
-          history.push("/login");
+            // params.registerplan params.registerpackage
+            const payload = {
+              plan: params.registerplan,
+              package: params.registerpackage,
+              email: data.email
+            };
+            const apiConfig = {
+              headers: {
+                "Authorization": `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
+                "Content-Type": "application/json",
+              },
+            };
+            axios.post(
+              config.RAZZLE_USER_ROLES_API_URL,
+              payload,
+              apiConfig,
+            )
+              .then(({ data }) => {
+                history.push("/login");
+              })
+              .catch(function (error) {
+                setFormError({ isVisible: true, message: error.message });
+              });
+            //persiting account type here
         } catch (error) {
           setFormError({ isVisible: true, message: error.message });
         }

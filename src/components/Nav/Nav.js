@@ -291,6 +291,12 @@ const Nav = ({ history }) => {
                     >
                       Website builder & domain
                     </a>
+                    <ul className={styles["ul"]}>
+                      <li><a title="How to make a website" href="/Static website & domain#howtowebsite">How to make a website</a></li>
+                      <li><a title="Web builder sites" href="/Static website & domain#websitebuildersites">Web builder sites</a></li>
+                      <li><a title="Make your own website" href="/Static website & domain#makeyourwebsite">Make your own website</a></li>
+                      
+                    </ul>
                   </li>
                   <li>
                     <a
@@ -300,6 +306,9 @@ const Nav = ({ history }) => {
                     >
                       Dynamic website + development team
                     </a>
+                    <ul className={styles["ul"]}>
+                      <li><a title="Why the Development Team Is Your Most Valuable Asset" href="/Dynamic website + development team#website">Why the Development Team Is Your Most Valuable Asset</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a
@@ -309,6 +318,10 @@ const Nav = ({ history }) => {
                     >
                       Website + app + development team
                     </a>
+
+                    <ul className={styles["ul"]}>
+                      <li><a title="Project Management Tools" href="/Website + app + development team#managementtools">Project Management Tools</a></li>
+                    </ul>
                   </li>
                 </ul>
               </li>

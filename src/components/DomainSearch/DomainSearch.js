@@ -175,7 +175,7 @@ const DomainSearch = (props, ...rest) => {
       )
       .then(({ data }) => {
         const newData1 = data;
-        if (!data.err) {
+        if (!data.err||locale.currency === "USD") {
           axios.get(config.RAZZLE_EXCHANGE_RATE_API_URL+`?from=USD&to=${locale.currency}&amount=${data.data.data.registration_price}`).then((data)=>{
            let newPrice = data.data.result;
            newData1.data.data.registration_price = newPrice;
@@ -225,10 +225,7 @@ const DomainSearch = (props, ...rest) => {
               <input
                 type="text"
                 className={"form-control form-control-lg " + styles.Searchform}
-                placeholder={props.domainFormPlaceholder}
-                {...(!props.query.get("search") && {
-                  defaultValue: props.formVal,
-                })}
+                placeholder={props.formVal?props.formVal:props.domainFormPlaceholder}
                 {...(props.query.get("search") && {
                   defaultValue: props.query.get("search"),
                 })}

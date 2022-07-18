@@ -1,14 +1,14 @@
 {
   "client": {
     "css": [
-      "/static/css/client.e729a038.css"
+      "/static/css/client.88c8ad02.css"
     ],
     "js": [
-      "/static/js/client.a8bb485c.js"
+      "/static/js/client.423db56d.js"
     ],
     "map": [
-      "/static/css/client.e729a038.css.map",
-      "/static/js/client.a8bb485c.js.map"
+      "/static/css/client.88c8ad02.css.map",
+      "/static/js/client.423db56d.js.map"
     ],
     "chunks": [
       0
@@ -70,6 +70,7 @@
       "/images/THT_Fullcolour_Brand.svg",
       "/images/artist-toad-mascot.svg",
       "/static/media/1140-2.479b6ea2.svg",
+      "/static/media/THT_Fullcolour_Brand.bc9e5ba2.svg",
       "/static/media/THT_fullcolour_Text.3b360e53.svg",
       "/static/media/cement_mixer_truck_static.d5572c14.svg"
     ],
@@ -78,7 +79,7 @@
     ],
     "txt": [
       "/robots.txt",
-      "/static/js/client.a8bb485c.js.LICENSE.txt",
+      "/static/js/client.423db56d.js.LICENSE.txt",
       "/zones.txt"
     ],
     "xml": [

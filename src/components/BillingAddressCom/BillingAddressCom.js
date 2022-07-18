@@ -376,7 +376,7 @@ const BillingAddressCom = ({ history, locale }) => {
         </label>
       </div>
       <hr className="mb-4" />
-      <div class="d-grid gap-2">
+      <div className="d-grid gap-2">
       {<button
             className="btn btn-primary btn-lg btn-block" type="submit" disabled={!isValid}
           >

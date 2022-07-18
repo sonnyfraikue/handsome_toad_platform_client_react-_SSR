@@ -49,14 +49,14 @@ export const renderApp = (req, res) => {
         ${helmet.meta.toString()}
       ${cssLinksFromAssets(assets, "client")}
       <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17377590-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-17377590-1');
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTZ9DYW0H4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-BTZ9DYW0H4');
+      </script>
 
 <!-- Meta Pixel Code -->
 <script>

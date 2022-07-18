@@ -76,7 +76,7 @@ const Landingpage = (props) => {
       id: 10,
       domainAdvert: `Buy or transfer a domain with us for peace of mind.`,
       domainTitle: "Domain registration done simply.",
-      domainFormPlaceholder: "newsite.com",
+      domainFormPlaceholder: "example.com",
     },
   };
 
