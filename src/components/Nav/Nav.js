@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/THT_fullcolour_Text.svg";
 import styles from "./Nav.module.scss";
@@ -23,25 +23,38 @@ const Nav = ({ history }) => {
   const [toggler, setTogglerState] = useState({
     isVisible: false,
   });
-  const tempCC = locale.cc ? locale.cc.toLowerCase() : "us";
-  const [value, setValue] = useState(tempCC);
+  const [value, setValue] = useState(
+    locale.cc ? locale.cc.toLowerCase() : null
+  );
   const excludedCountries = [];
-  let filteredCountries = countriesJson.filter((each) => {
-    if (
-      each.CC === "AF" ||
-      each.CC === "AS" ||
-      each.CC === "OC" ||
-      each.CC === "AN" ||
-      each.CC === "SA"
-    ) {
-      return excludedCountries.push(each["a-2"].toLowerCase());
-    }
+
+  useEffect(() => {
+    if (locale.cc) return;
+    const tempCC = (window.navigator.userLanguage || window.navigator.language)
+      .split("-")[1]
+      .toLowerCase();
+    handleCountryChange(tempCC);
+
+    let filteredCountries = countriesJson.filter((each) => {
+      if (
+        each.CC === "AF" ||
+        each.CC === "AS" ||
+        each.CC === "OC" ||
+        each.CC === "AN" ||
+        each.CC === "SA"
+      ) {
+        return excludedCountries.push(each["a-2"].toLowerCase());
+      }
+    });
   });
 
   const handleCountryChange = (value) => {
     setValue(value);
     if (value === null) return;
-    const capCC = value.alpha2.toUpperCase();
+    const capCC =
+      typeof value === "string"
+        ? value.toUpperCase()
+        : value.alpha2.toUpperCase();
     const apiConfig = {
       headers: {
         Authorization: `Bearer ${config.RAZZLE_FIREBASE_API_KEY}`,
@@ -148,22 +161,6 @@ const Nav = ({ history }) => {
       })
       .catch((error) => {
         console.log(error);
-        // dispatch({
-        //   type: "locale",
-        //   payload: {
-        //     locale: {
-        //       currency: "USD",
-        //       languange: "en_GB",
-        //       domain:
-        //         process.env.NODE_ENV === "development"
-        //           ? "http://localhost:3000/"
-        //           : config.RAZZLE_DOMAIN,
-        //       code: "+1",
-        //       vatrate: null,
-        //       cc: "US",
-        //     },
-        //   },
-        // });
       });
   };
 
@@ -292,10 +289,30 @@ const Nav = ({ history }) => {
                       Website builder & domain
                     </a>
                     <ul className={styles["ul"]}>
-                      <li><a title="How to make a website" href="/Static website & domain#howtowebsite">How to make a website</a></li>
-                      <li><a title="Web builder sites" href="/Static website & domain#websitebuildersites">Web builder sites</a></li>
-                      <li><a title="Make your own website" href="/Static website & domain#makeyourwebsite">Make your own website</a></li>
-                      
+                      <li>
+                        <a
+                          title="How to make a website"
+                          href="/Static website & domain#howtowebsite"
+                        >
+                          How to make a website
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          title="Web builder sites"
+                          href="/Static website & domain#websitebuildersites"
+                        >
+                          Web builder sites
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          title="Make your own website"
+                          href="/Static website & domain#makeyourwebsite"
+                        >
+                          Make your own website
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -307,7 +324,14 @@ const Nav = ({ history }) => {
                       Dynamic website + development team
                     </a>
                     <ul className={styles["ul"]}>
-                      <li><a title="Why the Development Team Is Your Most Valuable Asset" href="/Dynamic website + development team#website">Why the Development Team Is Your Most Valuable Asset</a></li>
+                      <li>
+                        <a
+                          title="Why the Development Team Is Your Most Valuable Asset"
+                          href="/Dynamic website + development team#website"
+                        >
+                          Why the Development Team Is Your Most Valuable Asset
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -320,7 +344,14 @@ const Nav = ({ history }) => {
                     </a>
 
                     <ul className={styles["ul"]}>
-                      <li><a title="Project Management Tools" href="/Website + app + development team#managementtools">Project Management Tools</a></li>
+                      <li>
+                        <a
+                          title="Project Management Tools"
+                          href="/Website + app + development team#managementtools"
+                        >
+                          Project Management Tools
+                        </a>
+                      </li>
                     </ul>
                   </li>
                 </ul>

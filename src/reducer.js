@@ -31,15 +31,15 @@ const intialState = {
   currentTemplate: null,
   currentFeatures: [],
   locale: {
-    currency: "USD",
-    languange: "en_GB",
+    currency: null,
+    languange: null,
     domain:
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000/"
         : config.RAZZLE_DOMAIN,
     code: "+1",
     vatrate: null,
-    cc: "US",
+    cc: null,
   },
   basket: {
     domains: [],

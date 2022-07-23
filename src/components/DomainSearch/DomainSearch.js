@@ -175,7 +175,7 @@ const DomainSearch = (props, ...rest) => {
       )
       .then(({ data }) => {
         const newData1 = data;
-        if (!data.err||locale.currency === "USD") {
+        if (!data.err) {
           axios.get(config.RAZZLE_EXCHANGE_RATE_API_URL+`?from=USD&to=${locale.currency}&amount=${data.data.data.registration_price}`).then((data)=>{
            let newPrice = data.data.result;
            newData1.data.data.registration_price = newPrice;
